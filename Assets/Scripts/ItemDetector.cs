@@ -17,22 +17,47 @@ public class ItemDetector : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "magic item" && !containsItem && !other.GetComponent<VRCPickup>().IsHeld)
+        if (other.GetComponent<VRCPickup>() == null) return;
+        if (!containsItem && !other.GetComponent<VRCPickup>().IsHeld)
         {
+            GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
+            if (other.tag == "magic item" && (gls == null || gls.isGlowing()))
+            {
+                logicManager.itemsFound++;
+                Debug.Log("detected spell component, items found is now: " + logicManager.itemsFound);
+            }
+            else
+            {
+                Debug.Log("item was not required");
+            }
             containsItem = true;
-            Debug.Log("detected magic item");
-            logicManager.itemsFound++;
             other.GetComponent<Rigidbody>().isKinematic = true;
-            //other.GetComponent <VRCPickup>().pickupable = false;
             other.transform.position = new Vector3(transform.position.x, transform.position.y + itemOffset, transform.position.z);
 
         }
+        if (other.GetComponent<VRCPickup>().IsHeld && other.GetComponent<Rigidbody>().isKinematic)
+        {
+            Debug.Log("changed kinematic");
+            other.GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
-
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("spell item removed");
-        containsItem = false;
-        logicManager.itemsFound--;
+        if (other.GetComponent<VRCPickup>() == null) return;
+        if (containsItem)
+        {
+            containsItem = false;
+            GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
+            if (other.tag == "magic item" && (gls == null || gls.isGlowing()))
+            {
+                logicManager.itemsFound--;
+                Debug.Log("items found is now: " + logicManager.itemsFound);
+            }
+        }
+        if (other.GetComponent<VRCPickup>().IsHeld)
+        {
+            Debug.Log("changed kinematic");
+            other.GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
 }

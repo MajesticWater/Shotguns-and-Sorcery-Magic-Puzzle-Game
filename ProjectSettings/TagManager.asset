@@ -6,6 +6,7 @@ TagManager:
   tags:
   - magic item
   - logic manager
+  - dark zone
   layers:
   - Default
   - TransparentFX

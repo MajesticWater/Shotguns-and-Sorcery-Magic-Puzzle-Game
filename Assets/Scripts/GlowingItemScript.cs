@@ -5,8 +5,24 @@ using UnityEngine;
 public class GlowingItemScript : MonoBehaviour
 {
     private bool glowing = true;
+    private bool inDarkZone = true;
     [SerializeField] Material glowingMat;
     [SerializeField] Material dullMat;
+    [SerializeField] GameObject lightSource;
+
+    private void Update()
+    {
+        if (!inDarkZone)
+        {
+            if (lightSource.activeInHierarchy && glowing)
+            {
+                SetDull();
+            } else if (!lightSource.activeInHierarchy && !glowing)
+            {
+                SetGlowing();
+            }
+        }
+    }
 
     public void SetGlowing()
     {
@@ -18,6 +34,30 @@ public class GlowingItemScript : MonoBehaviour
     {
         gameObject.GetComponent <Renderer>().material = dullMat;
         glowing = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "dark zone")
+        {
+            if (!glowing)
+            {
+                SetGlowing();
+            }
+            inDarkZone = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "dark zone")
+        {
+            if (lightSource.activeInHierarchy && glowing)
+            {
+                SetDull();
+            }
+            inDarkZone = false;
+        }
     }
 
     public bool isGlowing()

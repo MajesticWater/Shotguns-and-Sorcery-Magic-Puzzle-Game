@@ -13,11 +13,10 @@ public class MagicItemScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (gameObject.GetComponent<VRCPickup>().IsHeld && gameObject.GetComponent<Rigidbody>().isKinematic)
+        if (GetComponent<VRCPickup>().IsHeld && GetComponent<Rigidbody>().isKinematic)
         {
             Debug.Log("changed kinematic");
-            gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }

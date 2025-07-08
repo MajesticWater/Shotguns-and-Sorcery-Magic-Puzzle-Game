@@ -8,6 +8,7 @@ public class ItemDetector : MonoBehaviour
 {
     [SerializeField] float itemOffset = 1;
     private bool containsItem = false;
+    private bool containsMagicItem = false;
     private LogicManager logicManager;
 
     private void Start()
@@ -17,22 +18,88 @@ public class ItemDetector : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "magic item" && !containsItem && !other.GetComponent<VRCPickup>().IsHeld)
+        if (other.GetComponent<VRCPickup>() == null) return;
+        if (!other.GetComponent<VRCPickup>().IsHeld)
         {
-            containsItem = true;
-            Debug.Log("detected magic item");
-            logicManager.itemsFound++;
-            other.GetComponent<Rigidbody>().isKinematic = true;
-            //other.GetComponent <VRCPickup>().pickupable = false;
-            other.transform.position = new Vector3(transform.position.x, transform.position.y + itemOffset, transform.position.z);
+            if (!containsItem)
+            {
+                GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
+                if (other.tag == "magic item" && (gls == null || gls.isGlowing()))
+                {
+                    increaseMagicCount();
+                }
+                else
+                {
+                    Debug.Log("item was not required");
+                }
+                containsItem = true;
+                other.GetComponent<Rigidbody>().isKinematic = true;
+                other.transform.position = new Vector3(transform.position.x, transform.position.y + itemOffset, transform.position.z);
+            } else
+            {
+                GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
+                if (gls != null)
+                {
+                    if (gls.isGlowing())
+                    {
+                        increaseMagicCount();
+                    } else
+                    {
+                        decreaseMagicCount();
+                    }
+                    
+                }
 
+            }
+            
+
+        }
+
+        if (other.GetComponent<VRCPickup>().IsHeld && other.GetComponent<Rigidbody>().isKinematic)
+        {
+            //Debug.Log("changed kinematic");
+            other.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 
+    
+  
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("spell item removed");
-        containsItem = false;
-        logicManager.itemsFound--;
+        if (other.GetComponent<VRCPickup>() == null) return;
+        if (containsItem)
+        {
+            containsItem = false;
+            GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
+            if (other.tag == "magic item" && (gls == null || gls.isGlowing()))
+            {
+                decreaseMagicCount();
+            }
+        }
+        if (other.GetComponent<VRCPickup>().IsHeld)
+        {
+            //Debug.Log("changed kinematic");
+            other.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
+
+    private void increaseMagicCount()
+    {
+        if (!containsMagicItem)
+        {
+            containsMagicItem = true;
+            logicManager.itemsFound++;
+            Debug.Log("itemsFound is now: " + logicManager.itemsFound);
+        }
+    }
+
+    private void decreaseMagicCount()
+    {
+        if (containsMagicItem)
+        {
+            containsMagicItem = false;
+            logicManager.itemsFound--;
+            Debug.Log("itemsFound is now: " + logicManager.itemsFound);
+        }
     }
 }

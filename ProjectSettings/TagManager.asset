@@ -8,6 +8,8 @@ TagManager:
   - logic manager
   - dark zone
   - zombie
+  - FxTemporaire
+  - butterfly
   layers:
   - Default
   - TransparentFX

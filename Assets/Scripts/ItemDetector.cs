@@ -24,7 +24,8 @@ public class ItemDetector : MonoBehaviour
             if (!containsItem)
             {
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
-                if (other.tag == "magic item" && (gls == null || gls.isGlowing()))
+                ButterflyScript bfs = other.GetComponent<ButterflyScript>();
+                if (other.tag == "magic item" && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
                 {
                     increaseMagicCount();
                 }
@@ -71,7 +72,8 @@ public class ItemDetector : MonoBehaviour
         {
             containsItem = false;
             GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
-            if (other.tag == "magic item" && (gls == null || gls.isGlowing()))
+            ButterflyScript bfs = other.GetComponent<ButterflyScript>();
+            if (other.tag == "magic item" && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
             {
                 decreaseMagicCount();
             }

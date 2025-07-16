@@ -10,6 +10,7 @@ public class GlowingItemScript : MonoBehaviour
     [SerializeField] Material dullMat;
     [SerializeField] GameObject lightSource;
 
+
     private void Update()
     {
         if (!inDarkZone)
@@ -27,12 +28,14 @@ public class GlowingItemScript : MonoBehaviour
     public void SetGlowing()
     {
         gameObject.GetComponent<Renderer>().material = glowingMat;
+        gameObject.GetComponent<Light>().enabled = true;
         glowing = true;
     }
 
     public void SetDull()
     {
         gameObject.GetComponent <Renderer>().material = dullMat;
+        gameObject.GetComponent<Light>().enabled = false;
         glowing = false;
     }
 

@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class ColorChangeScript : MonoBehaviour
 {
-    [SerializeField] Material tableColor;
-    [SerializeField] GameObject explosion;
-    [SerializeField] float offset = 5;
+    [SerializeField] Material butterflyMat;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "butterfly")
+        if (other.name == "butterfly DO NOT CHANGE NAME")
         {
-            other.GetComponent<Renderer>().material = tableColor;
-            Instantiate(explosion, new Vector3(transform.position.x, transform.position.y + offset, transform.position.z), transform.rotation);
+            other.GetComponent<ButterflyScript>().setColor(butterflyMat);
         }
     }
 }

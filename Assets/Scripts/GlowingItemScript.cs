@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using UdonSharp;
 using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 
-public class GlowingItemScript : MonoBehaviour
+public class GlowingItemScript : UdonSharpBehaviour
 {
     private bool glowing = true;
     private bool inDarkZone = true;
@@ -18,7 +20,8 @@ public class GlowingItemScript : MonoBehaviour
             if (lightSource.activeInHierarchy && glowing)
             {
                 SetDull();
-            } else if (!lightSource.activeInHierarchy && !glowing)
+            }
+            else if (!lightSource.activeInHierarchy && !glowing)
             {
                 SetGlowing();
             }
@@ -34,14 +37,14 @@ public class GlowingItemScript : MonoBehaviour
 
     public void SetDull()
     {
-        gameObject.GetComponent <Renderer>().material = dullMat;
+        gameObject.GetComponent<Renderer>().material = dullMat;
         gameObject.GetComponent<Light>().enabled = false;
         glowing = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "dark zone")
+        if (other.name == "dark zone")
         {
             if (!glowing)
             {
@@ -53,7 +56,7 @@ public class GlowingItemScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "dark zone")
+        if (other.name == "dark zone")
         {
             if (lightSource.activeInHierarchy && glowing)
             {

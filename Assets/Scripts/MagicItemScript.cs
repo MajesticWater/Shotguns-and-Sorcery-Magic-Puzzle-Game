@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using UdonSharp;
 using UnityEngine;
 using VRC.SDK3.Components;
+using VRC.SDKBase;
+using VRC.Udon;
 
-public class MagicItemScript : MonoBehaviour
+public class MagicItemScript : UdonSharpBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (GetComponent<VRCPickup>().IsHeld && GetComponent<Rigidbody>().isKinematic)

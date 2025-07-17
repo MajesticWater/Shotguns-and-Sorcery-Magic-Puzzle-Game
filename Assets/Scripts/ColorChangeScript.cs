@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using UdonSharp;
 using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 
-public class ColorChangeScript : MonoBehaviour
+public class ColorChangeScript : UdonSharpBehaviour
 {
     [SerializeField] Material butterflyMat;
 

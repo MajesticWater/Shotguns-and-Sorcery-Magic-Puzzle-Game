@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using UdonSharp;
 using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 
-public class ClamScript : MonoBehaviour
+public class ClamScript : UdonSharpBehaviour
 {
     [SerializeField] GameObject clam;
     [SerializeField] GameObject pearl;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "zombie")
+        if (other.name == "zombie")
         {
             clam.SetActive(false);
             pearl.SetActive(true);

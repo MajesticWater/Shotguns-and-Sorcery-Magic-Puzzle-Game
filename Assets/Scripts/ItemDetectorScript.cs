@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿
+using UdonSharp;
 using UnityEngine;
 using VRC.SDK3.Components;
+using VRC.SDKBase;
+using VRC.Udon;
 
-public class ItemDetector : MonoBehaviour
+public class ItemDetectorScript : UdonSharpBehaviour
 {
     [SerializeField] float itemOffset = 1;
     private bool containsItem = false;
     private bool containsMagicItem = false;
-    private LogicManager logicManager;
+    [SerializeField] LogicManagerScript logicManager;
 
     private void Start()
     {
-        logicManager = GameObject.FindGameObjectWithTag("logic manager").GetComponent<LogicManager>();
+        logicManager = gameObject.transform.parent.GetComponent<LogicManagerScript>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -25,7 +26,8 @@ public class ItemDetector : MonoBehaviour
             {
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
                 ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
-                if (other.tag == "magic item" && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
+                MagicItemScript mis = other.GetComponent<MagicItemScript>();
+                if (mis != null && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
                 {
                     increaseMagicCount();
                 }
@@ -36,7 +38,8 @@ public class ItemDetector : MonoBehaviour
                 containsItem = true;
                 other.GetComponent<Rigidbody>().isKinematic = true;
                 other.transform.position = new Vector3(transform.position.x, transform.position.y + itemOffset, transform.position.z);
-            } else
+            }
+            else
             {
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
                 ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
@@ -45,25 +48,27 @@ public class ItemDetector : MonoBehaviour
                     if (gls.isGlowing())
                     {
                         increaseMagicCount();
-                    } else
+                    }
+                    else
                     {
                         decreaseMagicCount();
                     }
-                    
+
                 }
                 if (bfs != null)
                 {
                     if (bfs.isCorrectColor())
                     {
                         increaseMagicCount();
-                    } else
+                    }
+                    else
                     {
                         decreaseMagicCount();
                     }
                 }
 
             }
-            
+
 
         }
 
@@ -74,8 +79,8 @@ public class ItemDetector : MonoBehaviour
         }
     }
 
-    
-  
+
+
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("exited");
@@ -85,7 +90,8 @@ public class ItemDetector : MonoBehaviour
             containsItem = false;
             GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
             ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
-            if (other.tag == "magic item" && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
+            MagicItemScript mis = other.GetComponent<MagicItemScript>();
+            if (mis != null && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
             {
                 decreaseMagicCount();
             }

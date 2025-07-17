@@ -1,24 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using UdonSharp;
 using UnityEngine;
-using VRC.Udon.Wrapper.Modules;
+using VRC.SDKBase;
+using VRC.Udon;
 
-
-public class ButterflyScript : MonoBehaviour
+public class ButterflyScript : UdonSharpBehaviour
 {
     [SerializeField] GameObject[] wingPieces;
     [SerializeField] Material correctMat;
 
     private bool correctColor = false;
-
     public void setColor(Material mat)
     {
-        
+
         if (mat == correctMat)
         {
             Debug.Log("changed to correct color");
             correctColor = true;
-        } else
+        }
+        else
         {
             correctColor = false;
         }

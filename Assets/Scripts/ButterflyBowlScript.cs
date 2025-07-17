@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿
+using UdonSharp;
 using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
 
-public class ButterflyBowlScript : MonoBehaviour
+public class ButterflyBowlScript : UdonSharpBehaviour
 {
     [SerializeField] GameObject[] butterflies;
-
     public bool isCorrectColor()
     {
         return butterflies[0].GetComponent<ButterflyScript>().isCorrectColor();

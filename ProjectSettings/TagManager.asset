@@ -10,6 +10,7 @@ TagManager:
   - zombie
   - FxTemporaire
   - butterfly
+  - player
   layers:
   - Default
   - TransparentFX

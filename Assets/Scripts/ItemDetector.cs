@@ -24,7 +24,7 @@ public class ItemDetector : MonoBehaviour
             if (!containsItem)
             {
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
-                ButterflyScript bfs = other.GetComponent<ButterflyScript>();
+                ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
                 if (other.tag == "magic item" && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
                 {
                     increaseMagicCount();
@@ -39,6 +39,7 @@ public class ItemDetector : MonoBehaviour
             } else
             {
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
+                ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
                 if (gls != null)
                 {
                     if (gls.isGlowing())
@@ -49,6 +50,16 @@ public class ItemDetector : MonoBehaviour
                         decreaseMagicCount();
                     }
                     
+                }
+                if (bfs != null)
+                {
+                    if (bfs.isCorrectColor())
+                    {
+                        increaseMagicCount();
+                    } else
+                    {
+                        decreaseMagicCount();
+                    }
                 }
 
             }
@@ -67,12 +78,13 @@ public class ItemDetector : MonoBehaviour
   
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("exited");
         if (other.GetComponent<VRCPickup>() == null) return;
         if (containsItem)
         {
             containsItem = false;
             GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
-            ButterflyScript bfs = other.GetComponent<ButterflyScript>();
+            ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
             if (other.tag == "magic item" && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
             {
                 decreaseMagicCount();

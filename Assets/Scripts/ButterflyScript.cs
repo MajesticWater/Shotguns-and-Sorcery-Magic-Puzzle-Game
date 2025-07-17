@@ -13,6 +13,7 @@ public class ButterflyScript : MonoBehaviour
 
     public void setColor(Material mat)
     {
+        
         if (mat == correctMat)
         {
             Debug.Log("changed to correct color");

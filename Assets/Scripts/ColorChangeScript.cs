@@ -8,9 +8,9 @@ public class ColorChangeScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "butterfly DO NOT CHANGE NAME")
+        if (other.name == "Butterfly Bowl")
         {
-            other.GetComponent<ButterflyScript>().setColor(butterflyMat);
+            other.GetComponent<ButterflyBowlScript>().setColor(butterflyMat);
         }
     }
 }

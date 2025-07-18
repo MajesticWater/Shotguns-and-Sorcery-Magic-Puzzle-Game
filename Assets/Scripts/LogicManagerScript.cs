@@ -17,6 +17,17 @@ public class LogicManagerScript : UdonSharpBehaviour
     private bool circleOn = true;
     private GameObject obj;
     [SerializeField] float circleOffset;
+    [SerializeField] float soundRateMin;
+    [SerializeField] float soundRateMax;
+    private float soundRate;
+    private float soundTime = 0;
+
+
+    private void Start()
+    {
+        soundRate = Random.Range(soundRateMin, soundRateMax);
+    }
+
     void Update()
     {
         if (itemsFound == itemsToWin)
@@ -30,13 +41,25 @@ public class LogicManagerScript : UdonSharpBehaviour
             {
                 circleOn = false;
                 time = 1 + 1 / expRate;
+                soundTime = 1 + 1 / soundRate;
                 Destroy(obj);
             }
-            if (!circleOn && (expRate == 0 || time > 1 / expRate))
+            if (!circleOn)
             {
-                time = 0;
-                Instantiate(explosion, new Vector3(expX, expY, expZ), Quaternion.Euler(Vector3.zero));
+                if (expRate == 0 || time > 1 / expRate)
+                {
+                    time = 0;
+                    Instantiate(explosion, new Vector3(expX, expY, expZ), Quaternion.Euler(Vector3.zero));
+                }
+                if (soundRate == 0 || soundTime > 1 / soundRate)
+                {
+                    soundTime = 0;
+                    soundRate = Random.Range(soundRateMin, soundRateMax);
+                    gameObject.GetComponent<AudioSource>().Play();
+                }
             }
+
+            soundTime += Time.deltaTime;
             time += Time.deltaTime;
         }
     }

@@ -107,6 +107,7 @@ public class ItemDetectorScript : UdonSharpBehaviour
                 ),
                 Quaternion.Euler(Vector3.zero)
             );
+            gameObject.GetComponent<AudioSource>().Play();
         }
     }
 

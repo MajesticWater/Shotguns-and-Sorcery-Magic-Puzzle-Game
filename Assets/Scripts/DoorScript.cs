@@ -1,6 +1,7 @@
 ﻿
 using UdonSharp;
 using UnityEngine;
+using UnityEngine.Rendering;
 using VRC.SDK3.Components;
 using VRC.SDKBase;
 using VRC.Udon;
@@ -15,8 +16,18 @@ public class DoorScript : UdonSharpBehaviour
     {
         if (player.isLocal)
         {
-            player.TeleportTo(new Vector3(end.transform.position.x + offsetX, end.transform.position.y + offsetY, end.transform.position.z + offsetZ),
-                Quaternion.Euler(end.transform.rotation.x + rOffsetX, end.transform.rotation.y + rOffsetY, end.transform.rotation.z + rOffsetZ));
+            player.TeleportTo(new Vector3(
+                    end.transform.position.x + offsetX,
+                    end.transform.position.y + offsetY,
+                    end.transform.position.z + offsetZ
+                ),
+                Quaternion.Euler(
+                    end.transform.rotation.x + rOffsetX,
+                    end.transform.rotation.y + rOffsetY,
+                    end.transform.rotation.z + rOffsetZ
+                )
+            );
+            end.GetComponent<AudioSource>().Play();
         }
     }
 
@@ -37,5 +48,6 @@ public class DoorScript : UdonSharpBehaviour
         Debug.Log("Teleporting: " + obj.name);
         obj.transform.position = new Vector3(end.transform.position.x + offsetX, end.transform.position.y + offsetY, end.transform.position.z + offsetZ);
         obj.transform.eulerAngles = new Vector3(end.transform.rotation.x + rOffsetX, end.transform.rotation.y + rOffsetY, end.transform.rotation.z + rOffsetZ);
+        gameObject.GetComponent<AudioSource>().Play();
     }
 }

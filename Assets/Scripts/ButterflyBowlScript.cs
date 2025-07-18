@@ -23,5 +23,6 @@ public class ButterflyBowlScript : UdonSharpBehaviour
         }
         Instantiate(particles, gameObject.transform.position,
             Quaternion.Euler(Vector3.zero));
+        gameObject.GetComponent<AudioSource>().Play();
     }
 }

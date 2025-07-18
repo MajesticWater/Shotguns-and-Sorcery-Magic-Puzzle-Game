@@ -105,7 +105,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.17
+  m_Radius: 0.44
   m_Height: 89.49
   m_Direction: 1
   m_Center: {x: 0.000000054176656, y: -11.7, z: -0.00000010835331}
@@ -132,7 +132,6 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4634416119528786493}
   itemOffset: 0.2
-  logicManager: {fileID: 0}
 --- !u!114 &4634416119528786493
 MonoBehaviour:
   m_ObjectHideFlags: 0

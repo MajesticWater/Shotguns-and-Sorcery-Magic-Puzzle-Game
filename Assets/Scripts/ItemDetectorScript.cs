@@ -10,7 +10,7 @@ public class ItemDetectorScript : UdonSharpBehaviour
     [SerializeField] float itemOffset = 1;
     private bool containsItem = false;
     private bool containsMagicItem = false;
-    [SerializeField] LogicManagerScript logicManager;
+    private LogicManagerScript logicManager;
 
     private void Start()
     {
@@ -42,7 +42,6 @@ public class ItemDetectorScript : UdonSharpBehaviour
             else
             {
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
-                ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
                 if (gls != null)
                 {
                     if (gls.isGlowing())
@@ -55,18 +54,6 @@ public class ItemDetectorScript : UdonSharpBehaviour
                     }
 
                 }
-                if (bfs != null)
-                {
-                    if (bfs.isCorrectColor())
-                    {
-                        increaseMagicCount();
-                    }
-                    else
-                    {
-                        decreaseMagicCount();
-                    }
-                }
-
             }
 
 
@@ -101,6 +88,7 @@ public class ItemDetectorScript : UdonSharpBehaviour
             //Debug.Log("changed kinematic");
             other.GetComponent<Rigidbody>().isKinematic = false;
         }
+        Debug.Log("contains item: " + containsItem);
     }
 
     private void increaseMagicCount()

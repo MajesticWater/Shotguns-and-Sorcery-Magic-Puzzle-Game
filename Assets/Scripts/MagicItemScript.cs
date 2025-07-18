@@ -7,12 +7,5 @@ using VRC.Udon;
 
 public class MagicItemScript : UdonSharpBehaviour
 {
-    void Update()
-    {
-        if (GetComponent<VRCPickup>().IsHeld && GetComponent<Rigidbody>().isKinematic)
-        {
-            Debug.Log("changed kinematic");
-            GetComponent<Rigidbody>().isKinematic = false;
-        }
-    }
+
 }

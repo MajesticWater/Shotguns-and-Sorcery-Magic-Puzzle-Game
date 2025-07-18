@@ -3,7 +3,7 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-using static UnityEditor.Progress;
+// using static UnityEditor.Progress;
 
 public class LogicManagerScript : UdonSharpBehaviour
 {

@@ -28,7 +28,8 @@ public class ItemDetectorScript : UdonSharpBehaviour
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
                 ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
                 MagicItemScript mis = other.GetComponent<MagicItemScript>();
-                if (mis != null || (gls != null && gls.isGlowing()) || (bfs != null && bfs.isCorrectColor()))
+                FireFlowerScript ffs = other.GetComponent<FireFlowerScript>();
+                if (mis != null || (gls != null && gls.isGlowing()) || (bfs != null && bfs.isCorrectColor()) || (ffs != null && ffs.isLit()))
                 {
                     increaseMagicCount();
                 }
@@ -79,7 +80,8 @@ public class ItemDetectorScript : UdonSharpBehaviour
             GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
             ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
             MagicItemScript mis = other.GetComponent<MagicItemScript>();
-            if (mis != null && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
+            FireFlowerScript ffs = other.GetComponent<FireFlowerScript>();
+            if (mis != null || (gls != null && gls.isGlowing()) || (bfs != null && bfs.isCorrectColor()) || (ffs != null && ffs.isLit()))
             {
                 decreaseMagicCount();
             }
@@ -98,7 +100,13 @@ public class ItemDetectorScript : UdonSharpBehaviour
             containsMagicItem = true;
             logicManager.itemsFound++;
             Debug.Log("itemsFound is now: " + logicManager.itemsFound);
-            Instantiate(particles, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + itemOffset), Quaternion.Euler(Vector3.zero));
+            Instantiate(particles, new Vector3(
+                    gameObject.transform.position.x,
+                    gameObject.transform.position.y,
+                    gameObject.transform.position.z + itemOffset
+                ),
+                Quaternion.Euler(Vector3.zero)
+            );
         }
     }
 

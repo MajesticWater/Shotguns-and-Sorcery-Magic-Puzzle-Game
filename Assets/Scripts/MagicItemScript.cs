@@ -7,5 +7,11 @@ using VRC.Udon;
 
 public class MagicItemScript : UdonSharpBehaviour
 {
-
+    public override void OnPickup()
+    {
+        if (gameObject.GetComponent<Rigidbody>().isKinematic)
+        {
+            gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
 }

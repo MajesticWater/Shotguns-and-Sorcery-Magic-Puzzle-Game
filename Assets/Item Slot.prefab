@@ -132,6 +132,8 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4634416119528786493}
   itemOffset: 0.2
+  particles: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753,
+    type: 3}
 --- !u!114 &4634416119528786493
 MonoBehaviour:
   m_ObjectHideFlags: 0

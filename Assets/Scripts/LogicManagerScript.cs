@@ -12,18 +12,34 @@ public class LogicManagerScript : UdonSharpBehaviour
     [SerializeField] GameObject explosion;
     [SerializeField] float expX, expY, expZ;
     [SerializeField] float expRate;
-    private float exp = 0;
+    private float time = 0;
+    [SerializeField] GameObject magicCircle;
+    [SerializeField] float magicTime = 1;
+    private bool circleOn = true;
+    private GameObject obj;
 
     void Update()
     {
         if (itemsFound == itemsToWin)
         {
-            exp += Time.deltaTime;
-            if (expRate == 0 || exp > 1 / expRate)
+            if (time == 0)
             {
-                exp = 0;
+                obj = Instantiate(magicCircle, new Vector3(expX, expY, expZ), Quaternion.Euler(Vector3.zero));
+                //magicTime = magicCircle.GetComponent<magicCircleScript>().magicTime;
+            }
+       
+            if (circleOn && time > magicTime)
+            {
+                circleOn = false;
+                time = 1 + 1 / expRate;
+                Destroy(obj);
+            }
+            if (!circleOn && (expRate == 0 || time > 1 / expRate))
+            {
+                time = 0;
                 Instantiate(explosion, new Vector3(expX, expY, expZ), Quaternion.Euler(Vector3.zero));
             }
+            time += Time.deltaTime;
         }
     }
 }

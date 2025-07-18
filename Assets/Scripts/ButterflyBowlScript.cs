@@ -7,6 +7,7 @@ using VRC.Udon;
 public class ButterflyBowlScript : UdonSharpBehaviour
 {
     [SerializeField] GameObject[] butterflies;
+    [SerializeField] GameObject particles;
     public bool isCorrectColor()
     {
         return butterflies[0].GetComponent<ButterflyScript>().isCorrectColor();
@@ -19,5 +20,7 @@ public class ButterflyBowlScript : UdonSharpBehaviour
         {
             butterfly.GetComponent<ButterflyScript>().setColor(mat);
         }
+        Instantiate(particles, gameObject.transform.position,
+            Quaternion.Euler(Vector3.zero));
     }
 }

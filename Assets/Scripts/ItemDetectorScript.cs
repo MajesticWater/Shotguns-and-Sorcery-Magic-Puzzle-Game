@@ -11,6 +11,7 @@ public class ItemDetectorScript : UdonSharpBehaviour
     private bool containsItem = false;
     private bool containsMagicItem = false;
     private LogicManagerScript logicManager;
+    [SerializeField] GameObject particles;
 
     private void Start()
     {
@@ -98,6 +99,7 @@ public class ItemDetectorScript : UdonSharpBehaviour
             containsMagicItem = true;
             logicManager.itemsFound++;
             Debug.Log("itemsFound is now: " + logicManager.itemsFound);
+            Instantiate(particles, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + itemOffset), Quaternion.Euler(Vector3.zero));
         }
     }
 

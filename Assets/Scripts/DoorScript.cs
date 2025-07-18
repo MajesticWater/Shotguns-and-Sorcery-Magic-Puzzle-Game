@@ -11,9 +11,19 @@ public class DoorScript : UdonSharpBehaviour
     [SerializeField] float offsetX, offsetY, offsetZ;
     [SerializeField] float rOffsetX, rOffsetY, rOffsetZ;
 
+    public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+    {
+        if (player.isLocal)
+        {
+            player.TeleportTo(new Vector3(end.transform.position.x + offsetX, end.transform.position.y + offsetY, end.transform.position.z + offsetZ),
+                Quaternion.Euler(end.transform.rotation.x + rOffsetX, end.transform.rotation.y + rOffsetY, end.transform.rotation.z + rOffsetZ));
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         GameObject obj = other.gameObject;
+        Debug.Log("Teleporting: " + obj.name);
         if (obj.name != "PlayerController")
         {
             VRCPickup pick = obj.GetComponent<VRCPickup>();
@@ -26,10 +36,6 @@ public class DoorScript : UdonSharpBehaviour
 
         Debug.Log("Teleporting: " + obj.name);
         obj.transform.position = new Vector3(end.transform.position.x + offsetX, end.transform.position.y + offsetY, end.transform.position.z + offsetZ);
-        obj.transform.eulerAngles = new Vector3(
-            obj.transform.eulerAngles.x + rOffsetX,
-            obj.transform.eulerAngles.y + rOffsetY,
-            obj.transform.eulerAngles.z + rOffsetZ
-        );
+        obj.transform.eulerAngles = new Vector3(end.transform.rotation.x + rOffsetX, end.transform.rotation.y + rOffsetY, end.transform.rotation.z + rOffsetZ);
     }
 }

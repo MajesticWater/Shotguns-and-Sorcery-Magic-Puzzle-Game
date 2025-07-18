@@ -31,6 +31,7 @@ public class ButterflyScript : UdonSharpBehaviour
 
     public bool isCorrectColor()
     {
+        //Debug.Log("butterfly correct? " +  correctColor);
         return correctColor;
     }
 }

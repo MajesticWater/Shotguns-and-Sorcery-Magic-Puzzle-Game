@@ -28,7 +28,7 @@ public class ItemDetectorScript : UdonSharpBehaviour
                 GlowingItemScript gls = other.GetComponent<GlowingItemScript>();
                 ButterflyBowlScript bfs = other.GetComponent<ButterflyBowlScript>();
                 MagicItemScript mis = other.GetComponent<MagicItemScript>();
-                if (mis != null && (gls == null || gls.isGlowing()) && (bfs == null || bfs.isCorrectColor()))
+                if (mis != null || (gls != null && gls.isGlowing()) || (bfs != null && bfs.isCorrectColor()))
                 {
                     increaseMagicCount();
                 }
@@ -89,7 +89,6 @@ public class ItemDetectorScript : UdonSharpBehaviour
             //Debug.Log("changed kinematic");
             other.GetComponent<Rigidbody>().isKinematic = false;
         }
-        Debug.Log("contains item: " + containsItem);
     }
 
     private void increaseMagicCount()

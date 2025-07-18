@@ -17,15 +17,14 @@ public class LogicManagerScript : UdonSharpBehaviour
     [SerializeField] float magicTime = 1;
     private bool circleOn = true;
     private GameObject obj;
-
+    [SerializeField] float circleOffset;
     void Update()
     {
         if (itemsFound == itemsToWin)
         {
             if (time == 0)
             {
-                obj = Instantiate(magicCircle, new Vector3(expX, expY, expZ), Quaternion.Euler(Vector3.zero));
-                //magicTime = magicCircle.GetComponent<magicCircleScript>().magicTime;
+                obj = Instantiate(magicCircle, new Vector3(expX, gameObject.transform.position.y + circleOffset, expZ), Quaternion.Euler(Vector3.zero));
             }
        
             if (circleOn && time > magicTime)

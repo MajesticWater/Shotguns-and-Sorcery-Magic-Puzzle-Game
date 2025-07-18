@@ -62,7 +62,7 @@ MonoBehaviour:
   - {fileID: 6407411647495732839}
   - {fileID: 3478483461256797620}
   - {fileID: 9183064282376109312}
-  correctMat: {fileID: 0}
+  correctMat: {fileID: 2100000, guid: 1eca18427cc79454e8d1c5a80ce32292, type: 2}
 --- !u!114 &8923184388783406544
 MonoBehaviour:
   m_ObjectHideFlags: 0

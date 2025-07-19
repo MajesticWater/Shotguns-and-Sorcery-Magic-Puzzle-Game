@@ -21,6 +21,7 @@ public class LogicManagerScript : UdonSharpBehaviour
     [SerializeField] float soundRateMax;
     private float soundRate;
     private float soundTime = 0;
+    [SerializeField] GameObject bgm;
 
 
     private void Start()
@@ -34,6 +35,7 @@ public class LogicManagerScript : UdonSharpBehaviour
         {
             if (time == 0)
             {
+                bgm.GetComponent<AudioSource>().Stop();
                 obj = Instantiate(magicCircle, new Vector3(expX, gameObject.transform.position.y + circleOffset, expZ), Quaternion.Euler(Vector3.zero));
             }
        

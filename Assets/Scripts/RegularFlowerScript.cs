@@ -10,4 +10,12 @@ public class RegularFlowerScript : UdonSharpBehaviour
     {
         Destroy(gameObject);
     }
+
+    public override void OnPickup()
+    {
+        if (gameObject.GetComponent<Rigidbody>().isKinematic)
+        {
+            gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
 }

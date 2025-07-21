@@ -5,17 +5,17 @@ using VRC.Udon;
 
 public class ClamJar : UdonSharpBehaviour
 {
-    public GameObject Jar;                      // Reference to the Jar
-    public Transform ClamObjectLocation;        // Where the Jar should snap to
-    public Animator Clam;                       // Animator controller on Clam
-    public GameObject Pearl;                    // The Pearl that appears after
+    public GameObject Jar;                      // The pickupable Jar object
+    public Transform ClamObjectLocation;        // Target snap position for Jar
+    public Animator Clam;                       // Animator on the Clam
+    public GameObject Pearl;                    // Pearl to show after opening
 
-    public float snapDistance = 0.2f;           // How close the Jar must be
+    public float snapDistance = 0.2f;           // Snap trigger distance
     public float reopenDelay = 2.0f;            // Delay before clam reopens
 
     private bool hasSnapped = false;
 
-    private void Update()
+    void Update()
     {
         if (hasSnapped || Jar == null || ClamObjectLocation == null)
             return;
@@ -29,18 +29,18 @@ public class ClamJar : UdonSharpBehaviour
 
     private void SnapJar()
     {
-        // Snap position and rotation
+        // Snap position & rotation
         Jar.transform.position = ClamObjectLocation.position;
         Jar.transform.rotation = ClamObjectLocation.rotation;
 
-        // Disable pickup (optional)
+        // Disable pickup
         VRC_Pickup pickup = Jar.GetComponent<VRC_Pickup>();
         if (pickup != null)
         {
             pickup.pickupable = false;
         }
 
-        // Trigger clam to close
+        // Close clam
         if (Clam != null)
         {
             Clam.SetTrigger("Close");
@@ -56,7 +56,7 @@ public class ClamJar : UdonSharpBehaviour
     {
         if (Clam != null)
         {
-            Clam.SetTrigger("Open");
+            Clam.SetTrigger("Open"); // Animator will handle going to "clam open idle"
         }
 
         if (Pearl != null)

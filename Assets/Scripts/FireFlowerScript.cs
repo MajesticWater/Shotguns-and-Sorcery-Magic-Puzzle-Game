@@ -19,4 +19,12 @@ public class FireFlowerScript : UdonSharpBehaviour
     {
         return lit;
     }
+
+    public override void OnPickup()
+    {
+        if (gameObject.GetComponent<Rigidbody>().isKinematic)
+        {
+            gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
 }

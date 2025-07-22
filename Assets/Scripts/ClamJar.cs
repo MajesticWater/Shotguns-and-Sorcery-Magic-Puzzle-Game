@@ -12,6 +12,7 @@ public class ClamJar : UdonSharpBehaviour
 
     public float snapDistance = 0.2f;           // Snap trigger distance
     public float reopenDelay = 2.0f;            // Delay before clam reopens
+    public float jarDisappearDelay = 1.5f;      // Delay before hiding the Jar
 
     private bool hasSnapped = false;
 
@@ -29,9 +30,18 @@ public class ClamJar : UdonSharpBehaviour
 
     private void SnapJar()
     {
-        // Snap position & rotation
+        // Snap position & rotation exactly to the target
         Jar.transform.position = ClamObjectLocation.position;
         Jar.transform.rotation = ClamObjectLocation.rotation;
+
+        // Disable gravity
+        Rigidbody rb = Jar.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.useGravity = false;
+            rb.velocity = Vector3.zero;     // stop motion
+            rb.angularVelocity = Vector3.zero;
+        }
 
         // Disable pickup
         VRC_Pickup pickup = Jar.GetComponent<VRC_Pickup>();
@@ -40,7 +50,7 @@ public class ClamJar : UdonSharpBehaviour
             pickup.pickupable = false;
         }
 
-        // Close clam
+        // Close the clam
         if (Clam != null)
         {
             Clam.SetTrigger("Close");
@@ -48,20 +58,33 @@ public class ClamJar : UdonSharpBehaviour
 
         hasSnapped = true;
 
+        // Hide the jar after delay
+        SendCustomEventDelayedSeconds(nameof(HideJar), jarDisappearDelay);
+
         // Schedule re-opening and showing pearl
         SendCustomEventDelayedSeconds(nameof(ReopenClam), reopenDelay);
     }
+
 
     public void ReopenClam()
     {
         if (Clam != null)
         {
-            Clam.SetTrigger("Open"); // Animator will handle going to "clam open idle"
+            Clam.ResetTrigger("Close");
+            Clam.SetTrigger("Open"); // Should transition to "clam open idle"
         }
 
         if (Pearl != null)
         {
             Pearl.SetActive(true);
+        }
+    }
+
+    public void HideJar()
+    {
+        if (Jar != null)
+        {
+            Jar.SetActive(false);
         }
     }
 }

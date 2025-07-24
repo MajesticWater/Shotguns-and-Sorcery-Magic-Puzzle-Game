@@ -1,0 +1,4398 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1521398425 &-6267129990787437780
+VideoBuildInfo:
+  m_VideoClipCount: 0
+  m_IsVideoModuleDisabled: 0
+--- !u!382020655 &-4838596755037814557
+PluginBuildInfo:
+  m_RuntimePlugins:
+  - VRC.Udon.VM
+  - VRC.SDK3.Dynamics.PhysBone
+  - VRC.Udon.Security
+  - libvrc_fast_crypto
+  - VRCEconomy
+  - libvrc_image_loader
+  - YamlDotNet
+  - VRCSDK3
+  - nunit.framework
+  - VRCCore-Editor
+  - Serilog.Sinks.File
+  - vrc_fast_crypto
+  - VRC.SDK3.Dynamics.Contact
+  - System.Collections.Immutable
+  - OculusXRPlugin
+  - VRC.Udon.Wrapper
+  - vrc_image_loader
+  - Unity.Burst.Unsafe
+  - SemanticVersioning
+  - librsync.net
+  - OVRPlugin
+  - System.Runtime.CompilerServices.Unsafe
+  - Newtonsoft.Json
+  - Unity.Collections.LowLevel.ILSupport
+  - VRC.Udon.Common
+  - VRC.Udon.VRCWrapperModules
+  - VRC.Dynamics
+  - VRCSDKBase
+  - VRC.Utility
+  - portmidi
+  - VRC.Udon.ClientBindings
+  - SDKBase-Legacy
+  - Blake2Sharp
+  - VRC.SDK3.Dynamics.Constraint
+  - System.Text.Encoding.CodePages
+  - Serilog
+  - Collections.Pooled
+  - AudioPluginOculusSpatializer
+  m_EditorPlugins:
+  - VRC.Udon.VRCGraphModules
+  - VRC.Udon.EditorBindings
+  - 0Harmony
+  - VRC.SDK3.Dynamics.Contact.Editor
+  - libvrc_shader_compiler_plugin
+  - Mono.Cecil.Pdb
+  - JetBrains.Rider.PathLocator
+  - vrc_shader_compiler_plugin
+  - VRCSDKBase-Editor
+  - Microsoft.CodeAnalysis.CSharp
+  - VRC.Udon.VRCTypeResolverModules
+  - VRCEconomy-Editor
+  - ICSharpCode.SharpZipLib
+  - VRC.SDK3.Dynamics.Constraint.Editor
+  - UnityFbxSdkNative
+  - AppleEventIntegration
+  - Mono.Cecil
+  - VRC.Udon.Graph
+  - Unity.Burst.Cecil.Pdb
+  - Mono.Cecil.Rocks
+  - Microsoft.CodeAnalysis
+  - VRC.Udon.Compiler
+  - System.Reflection.Metadata
+  - VRCSDK3-Editor
+  - Mono.Cecil.Mdb
+  - Serilog.Sinks.Unity3D
+  - Algolia.Search
+  - Unity.Burst.Cecil.Mdb
+  - VRC.SDK3.Dynamics.PhysBone.Editor
+  - Unity.Burst.Cecil
+  - Unity.Burst.Cecil.Rocks
+  - vpm-core-lib
+  - VRC.Udon.UAssembly
+--- !u!641289076 &-4592053208943180437
+AudioBuildInfo:
+  m_IsAudioDisabled: 0
+  m_AudioClipCount: 8
+  m_AudioMixerCount: 0
+--- !u!1126 &-3267318009545251879
+PackedAssets:
+  m_ShortPath: BuildPlayer-world scene.sharedAssets
+  m_Overhead: 293556
+  m_Contents:
+  - fileID: 1
+    classID: 150
+    packedSize: 97
+    offset: 293576
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 2
+    classID: 142
+    packedSize: 160
+    offset: 293680
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 3
+    classID: 21
+    packedSize: 908
+    offset: 293840
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 4
+    classID: 21
+    packedSize: 924
+    offset: 294752
+    sourceAssetGUID: b4b793d516af94f43bfa659d6debac51
+    buildTimeAssetPath: Assets/Imported/window.obj
+  - fileID: 5
+    classID: 21
+    packedSize: 908
+    offset: 295680
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 6
+    classID: 21
+    packedSize: 908
+    offset: 296592
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 7
+    classID: 21
+    packedSize: 964
+    offset: 297504
+    sourceAssetGUID: 340ed05db7df7f84aaba90c83e875370
+    buildTimeAssetPath: Assets/Imported/jar.fbx
+  - fileID: 8
+    classID: 21
+    packedSize: 904
+    offset: 298472
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 9
+    classID: 21
+    packedSize: 908
+    offset: 299376
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 10
+    classID: 21
+    packedSize: 924
+    offset: 300288
+    sourceAssetGUID: 3568cfec1d0887842a60a594eac7ea7b
+    buildTimeAssetPath: Assets/Imported/moonlight ash tree.fbx
+  - fileID: 11
+    classID: 21
+    packedSize: 1080
+    offset: 301216
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 12
+    classID: 21
+    packedSize: 1080
+    offset: 302296
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 13
+    classID: 21
+    packedSize: 932
+    offset: 303376
+    sourceAssetGUID: 39dd57e1e8aca344fab0a31d825736b2
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Materials/Alambic02.mat
+  - fileID: 14
+    classID: 21
+    packedSize: 944
+    offset: 304312
+    sourceAssetGUID: 143268defb1a55c4f973412db5fbb1ec
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Materials/Table01.mat
+  - fileID: 15
+    classID: 21
+    packedSize: 944
+    offset: 305256
+    sourceAssetGUID: 1abc2f8a1e5d18348ae601b4cf25140a
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book01.mat
+  - fileID: 16
+    classID: 21
+    packedSize: 944
+    offset: 306200
+    sourceAssetGUID: 4eca5faaab0f96d4289ee469072513cf
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book03.mat
+  - fileID: 17
+    classID: 21
+    packedSize: 944
+    offset: 307144
+    sourceAssetGUID: a4f8af3ce67ffc54dada3a251f5dc4c9
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book04.mat
+  - fileID: 18
+    classID: 21
+    packedSize: 944
+    offset: 308088
+    sourceAssetGUID: 7315c15f0332f6b48889c537699a69a7
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book05.mat
+  - fileID: 19
+    classID: 21
+    packedSize: 944
+    offset: 309032
+    sourceAssetGUID: 0dc0b454f8042144dafc0ae9568f2539
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book05b.mat
+  - fileID: 20
+    classID: 21
+    packedSize: 944
+    offset: 309976
+    sourceAssetGUID: 6b755e7b9a59f7f43b2bd9fdf4833ff5
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book05c.mat
+  - fileID: 21
+    classID: 21
+    packedSize: 944
+    offset: 310920
+    sourceAssetGUID: 506738a925a8a5a4fb245fbb36c34cfe
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book06b.mat
+  - fileID: 22
+    classID: 21
+    packedSize: 944
+    offset: 311864
+    sourceAssetGUID: 984a0f0e3fb77f046ba8ca7361b57781
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book09b.mat
+  - fileID: 23
+    classID: 21
+    packedSize: 944
+    offset: 312808
+    sourceAssetGUID: 0a46ee12002d4bd4fa83a3ed8967ba0a
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book09e.mat
+  - fileID: 24
+    classID: 21
+    packedSize: 944
+    offset: 313752
+    sourceAssetGUID: 7c93511165f9c7143a5c1b446f2b2285
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book10.mat
+  - fileID: 25
+    classID: 21
+    packedSize: 944
+    offset: 314696
+    sourceAssetGUID: 25a3f1091b417e4409bc9c8628507705
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book11.mat
+  - fileID: 26
+    classID: 21
+    packedSize: 944
+    offset: 315640
+    sourceAssetGUID: 7a38605545fc4354196e2d30598a4dc3
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Materials/Book12.mat
+  - fileID: 27
+    classID: 21
+    packedSize: 988
+    offset: 316584
+    sourceAssetGUID: bbdd2a539da5d224d867117853a07d08
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Flasks/Materials/Flask02.mat
+  - fileID: 28
+    classID: 21
+    packedSize: 1032
+    offset: 317576
+    sourceAssetGUID: 71b9adff55df1224f8d1f7907dbdcb83
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Jar/Materials/Jar02.mat
+  - fileID: 29
+    classID: 21
+    packedSize: 1040
+    offset: 318608
+    sourceAssetGUID: 317b19003d0acec44aaf9b4d9cd44459
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Jar/Materials/LiquidJar.mat
+  - fileID: 30
+    classID: 21
+    packedSize: 928
+    offset: 319648
+    sourceAssetGUID: b1f7700fc9604d747bc04b2d11b9dd84
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Lab/Materials/Caldron.mat
+  - fileID: 31
+    classID: 21
+    packedSize: 932
+    offset: 320576
+    sourceAssetGUID: 4cf0fa5bb9003da4da57a64ce103ccd2
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Surfaces/Materials/Blackboard.mat
+  - fileID: 32
+    classID: 21
+    packedSize: 932
+    offset: 321512
+    sourceAssetGUID: 8bb543d77c2b84248b3658d104e61522
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Surfaces/Materials/WoodOrn01.mat
+  - fileID: 33
+    classID: 21
+    packedSize: 944
+    offset: 322448
+    sourceAssetGUID: 5ebc2312b1266f84e95742a7912a8948
+    buildTimeAssetPath: Assets/Imported/Brick Texture LITE/Materials/LITE/Brick 1.mat
+  - fileID: 34
+    classID: 21
+    packedSize: 944
+    offset: 323392
+    sourceAssetGUID: 2eab3ba336284b7418302a5c93bf655b
+    buildTimeAssetPath: Assets/Imported/Brick Texture LITE/Materials/LITE/Brick 4.mat
+  - fileID: 35
+    classID: 21
+    packedSize: 900
+    offset: 324336
+    sourceAssetGUID: 1eca18427cc79454e8d1c5a80ce32292
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/Materials/blue.mat
+  - fileID: 36
+    classID: 21
+    packedSize: 904
+    offset: 325240
+    sourceAssetGUID: 3cea68e3cca89e1488ab44fb20253408
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/Materials/green.mat
+  - fileID: 37
+    classID: 21
+    packedSize: 904
+    offset: 326144
+    sourceAssetGUID: f464688bf1407fa45b26041abd95222f
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/Materials/orange.mat
+  - fileID: 38
+    classID: 21
+    packedSize: 976
+    offset: 327048
+    sourceAssetGUID: 4a946c6883fa9054585030b09b7f9b27
+    buildTimeAssetPath: Assets/Imported/Cobwebs Pack/Texture/Materials/Cobwebs_BaseColor.mat
+  - fileID: 39
+    classID: 21
+    packedSize: 1252
+    offset: 328024
+    sourceAssetGUID: ddac23d301cbfca45bcbe217c05f0141
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Materials/MagicCircle.mat
+  - fileID: 40
+    classID: 21
+    packedSize: 1248
+    offset: 329280
+    sourceAssetGUID: 96d60590d2a3f0143a9a84d4568d9de8
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Materials/Mask1.mat
+  - fileID: 41
+    classID: 21
+    packedSize: 1264
+    offset: 330528
+    sourceAssetGUID: e546d2d7171981b468cf29388d902e99
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Materials/Point.mat
+  - fileID: 42
+    classID: 21
+    packedSize: 364
+    offset: 331792
+    sourceAssetGUID: 14fab0de6c54324468738e7b38a88207
+    buildTimeAssetPath: Assets/Imported/Hovl Studio/Procedural fire/Materials/FireSphere1.mat
+  - fileID: 43
+    classID: 21
+    packedSize: 364
+    offset: 332160
+    sourceAssetGUID: 20e729147a4dad247abfc2305c3dd963
+    buildTimeAssetPath: Assets/Imported/Hovl Studio/Procedural fire/Materials/SparkSphere.mat
+  - fileID: 44
+    classID: 21
+    packedSize: 1896
+    offset: 332528
+    sourceAssetGUID: cbb6f419bbe7c6e4d9ce7e0322aa267d
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      aura runic hdr ab nosp.mat
+  - fileID: 45
+    classID: 21
+    packedSize: 1920
+    offset: 334424
+    sourceAssetGUID: 41e018a6cf0c896418fc0b89dda748c6
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      magic star hdr ab.mat
+  - fileID: 46
+    classID: 21
+    packedSize: 840
+    offset: 336344
+    sourceAssetGUID: 8d244b42458199344aaea0c6c77cbb90
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      proc glow soft add.mat
+  - fileID: 47
+    classID: 21
+    packedSize: 848
+    offset: 337184
+    sourceAssetGUID: efaa1dd14471b6143b5ee7827566c1e0
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      proc glow soft invert add.mat
+  - fileID: 48
+    classID: 21
+    packedSize: 712
+    offset: 338032
+    sourceAssetGUID: a81df4963508f8c4e9c854c919c93b67
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      proc ring hdr ab.mat
+  - fileID: 49
+    classID: 21
+    packedSize: 784
+    offset: 338744
+    sourceAssetGUID: 6645e3e6774e3ea468774208c1569b29
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      proc ring ice hdr ab.mat
+  - fileID: 50
+    classID: 21
+    packedSize: 1944
+    offset: 339528
+    sourceAssetGUID: 7840d900dc0a4ed4dbcd26e23f064dd8
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      smoke cloud x4 ab.mat
+  - fileID: 51
+    classID: 21
+    packedSize: 1928
+    offset: 341472
+    sourceAssetGUID: ec1892961c3d27347b1ed3a3cb5f854e
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      smoke cloud x4 second color ab.mat
+  - fileID: 52
+    classID: 21
+    packedSize: 1940
+    offset: 343400
+    sourceAssetGUID: 0762aad6c86c7184482fd5c0cdea3b0e
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      spikes impact dissolve hdr ab.mat
+  - fileID: 53
+    classID: 21
+    packedSize: 2020
+    offset: 345344
+    sourceAssetGUID: 935ab430b9a17de4caf00054e74116f4
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      stretch ray blur hdr ab.mat
+  - fileID: 54
+    classID: 21
+    packedSize: 1884
+    offset: 347368
+    sourceAssetGUID: e58b05bbb47341847a331e7b5b579772
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      stretch trait hdr ab.mat
+  - fileID: 55
+    classID: 21
+    packedSize: 1944
+    offset: 349256
+    sourceAssetGUID: 9c0d180acd07ffd4183763050b4d1d22
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      stretch triangle smooth add.mat
+  - fileID: 56
+    classID: 21
+    packedSize: 960
+    offset: 351200
+    sourceAssetGUID: be0ab13001a53eb4897adfee98349c37
+    buildTimeAssetPath: Assets/Imported/Materials/360_F_463618303_NlFS8G3pkg3x7ykLHO0nUm0enBNIcruy.mat
+  - fileID: 57
+    classID: 21
+    packedSize: 968
+    offset: 352160
+    sourceAssetGUID: f2d9c82f4dacb7242a55addc86c07985
+    buildTimeAssetPath: Assets/Imported/Materials/Akar_Opcaity.mat
+  - fileID: 58
+    classID: 21
+    packedSize: 920
+    offset: 353128
+    sourceAssetGUID: a568f9bf89e45ff45a83ac40e3795f32
+    buildTimeAssetPath: Assets/Imported/Materials/Book_covers_BaseColor.mat
+  - fileID: 59
+    classID: 21
+    packedSize: 972
+    offset: 354048
+    sourceAssetGUID: 5f518a8a871cbf24eae3cda55fe91093
+    buildTimeAssetPath: Assets/Imported/Materials/Daun_Diff_combo.mat
+  - fileID: 60
+    classID: 21
+    packedSize: 988
+    offset: 355024
+    sourceAssetGUID: 76428984fc38cac4aa1ca65fbe5406b7
+    buildTimeAssetPath: Assets/Imported/Materials/DefaultMaterial_BaseColor_combo.mat
+  - fileID: 61
+    classID: 21
+    packedSize: 908
+    offset: 356016
+    sourceAssetGUID: b00fdc901a6e2e744a7c7a89ff44184c
+    buildTimeAssetPath: Assets/Imported/Materials/Pohon_Diff 1.mat
+  - fileID: 62
+    classID: 21
+    packedSize: 932
+    offset: 356928
+    sourceAssetGUID: 457b6a6420e40964fb86ff43d5ce9b41
+    buildTimeAssetPath: Assets/Imported/Materials/RoseinVaseAlbedo_T2.mat
+  - fileID: 63
+    classID: 21
+    packedSize: 912
+    offset: 357864
+    sourceAssetGUID: fa7f2d5bd6dfacf4e8ec3d98248c3683
+    buildTimeAssetPath: Assets/Imported/Materials/Stone-Diffuse3.mat
+  - fileID: 64
+    classID: 21
+    packedSize: 916
+    offset: 358776
+    sourceAssetGUID: ea38be55c598a154ea7fe0f7a21d50c9
+    buildTimeAssetPath: Assets/Imported/Materials/T_Dbarnes_Bshelf_BC.mat
+  - fileID: 65
+    classID: 21
+    packedSize: 908
+    offset: 359696
+    sourceAssetGUID: 10c991ce9bb5e294591c7c1cff590eda
+    buildTimeAssetPath: Assets/Imported/Materials/Table_albedo.mat
+  - fileID: 66
+    classID: 21
+    packedSize: 920
+    offset: 360608
+    sourceAssetGUID: 5cde7ccd1a642c0408572728756adeb4
+    buildTimeAssetPath: Assets/Imported/Materials/Verona_PO_Morion_albedo.mat
+  - fileID: 67
+    classID: 21
+    packedSize: 912
+    offset: 361528
+    sourceAssetGUID: 8dcb0f7ce593d3240962238d0aa94bfb
+    buildTimeAssetPath: Assets/Imported/Materials/albedometal-v2.mat
+  - fileID: 68
+    classID: 21
+    packedSize: 912
+    offset: 362440
+    sourceAssetGUID: d8e0a86b698bbb84c82bd23af9099825
+    buildTimeAssetPath: Assets/Imported/Materials/base_color_skech.mat
+  - fileID: 69
+    classID: 21
+    packedSize: 920
+    offset: 363352
+    sourceAssetGUID: 95a23ba88e1e1d443a61ad9e6ed8d630
+    buildTimeAssetPath: Assets/Imported/Materials/base_color_skech_update.mat
+  - fileID: 70
+    classID: 21
+    packedSize: 184
+    offset: 364272
+    sourceAssetGUID: 5be773d3d1657c042b085b0676f1f8c4
+    buildTimeAssetPath: Assets/Imported/Materials/book upscale.mat
+  - fileID: 71
+    classID: 21
+    packedSize: 976
+    offset: 364456
+    sourceAssetGUID: b9ae47b6a7ee2584aa366500fafc0da9
+    buildTimeAssetPath: Assets/Imported/Materials/daun_diff_2_combo.mat
+  - fileID: 72
+    classID: 21
+    packedSize: 976
+    offset: 365432
+    sourceAssetGUID: 06ba394d47090b140919192df68790be
+    buildTimeAssetPath: Assets/Imported/Materials/daun_diff_combo 1.mat
+  - fileID: 73
+    classID: 21
+    packedSize: 904
+    offset: 366408
+    sourceAssetGUID: 08ad1e4f426682344964102b15bc04c8
+    buildTimeAssetPath: Assets/Imported/Materials/finger.mat
+  - fileID: 74
+    classID: 21
+    packedSize: 980
+    offset: 367312
+    sourceAssetGUID: 893c30b73abce8b4883898a49f177c1d
+    buildTimeAssetPath: Assets/Imported/Materials/irtsya-seamless-geometric-pattern-on-paper-texture-art-deco-background_u-l-q1k5tzn0.mat
+  - fileID: 75
+    classID: 21
+    packedSize: 992
+    offset: 368296
+    sourceAssetGUID: 8c612b6090875084293af1abfc5f3d0e
+    buildTimeAssetPath: Assets/Imported/Materials/w0578_1s_Black-and-gold-sunburst-art-deco-wallpaper-Champagne-Toast_Repeating-Pattern-Sample-1.mat
+  - fileID: 76
+    classID: 21
+    packedSize: 912
+    offset: 369288
+    sourceAssetGUID: 7a71ead7dd4afb2468803fc48a21142f
+    buildTimeAssetPath: Assets/Imported/Materials/window_BaseColor.mat
+  - fileID: 77
+    classID: 21
+    packedSize: 972
+    offset: 370200
+    sourceAssetGUID: 58cdf033f1f28a945a432478f543aaa8
+    buildTimeAssetPath: Assets/Imported/Mugs, Bowls and Plates/Models/Materials/bowl01.mat
+  - fileID: 78
+    classID: 21
+    packedSize: 1052
+    offset: 371176
+    sourceAssetGUID: 44c7c776c9b68f446b99751ee739c7ca
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/mushroom_pointy_blue.mat
+  - fileID: 79
+    classID: 21
+    packedSize: 348
+    offset: 372232
+    sourceAssetGUID: 82b0d0d0e10e1f049ba8f9a8d9fce707
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/mushroom_pointy_pink.mat
+  - fileID: 80
+    classID: 21
+    packedSize: 980
+    offset: 372584
+    sourceAssetGUID: 68fa38cd1f9875b45a61c6251f1308f0
+    buildTimeAssetPath: Assets/Imported/New Material 1.mat
+  - fileID: 81
+    classID: 21
+    packedSize: 980
+    offset: 373568
+    sourceAssetGUID: fc4c0efcba919b845a315e984b8191db
+    buildTimeAssetPath: Assets/Imported/New Material 2.mat
+  - fileID: 82
+    classID: 21
+    packedSize: 980
+    offset: 374552
+    sourceAssetGUID: 059f353f4af793748a16631d6b35b9fc
+    buildTimeAssetPath: Assets/Imported/New Material 3.mat
+  - fileID: 83
+    classID: 21
+    packedSize: 948
+    offset: 375536
+    sourceAssetGUID: 30d89a3f3d5a5eb48995dbef2dc1125b
+    buildTimeAssetPath: Assets/Imported/New Material 4.mat
+  - fileID: 84
+    classID: 21
+    packedSize: 908
+    offset: 376488
+    sourceAssetGUID: 0f2b3108b63bdf549b223602e255a178
+    buildTimeAssetPath: Assets/Imported/New Material.mat
+  - fileID: 85
+    classID: 21
+    packedSize: 908
+    offset: 377400
+    sourceAssetGUID: b0018f38426903a31b34699fdc517b04
+    buildTimeAssetPath: Assets/Imported/Simple Modular Pillars/Materials/FancyStone.mat
+  - fileID: 86
+    classID: 21
+    packedSize: 236
+    offset: 378312
+    sourceAssetGUID: d4454f71d85928744be7771e2143dab7
+    buildTimeAssetPath: Assets/Imported/SkySeries Freebie/CoriolisNight4k.mat
+  - fileID: 87
+    classID: 21
+    packedSize: 1040
+    offset: 378552
+    sourceAssetGUID: c768216b352631b4cbd92ddd8f68047a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Material A.mat
+  - fileID: 88
+    classID: 21
+    packedSize: 1040
+    offset: 379592
+    sourceAssetGUID: c7313939636e1e246acf70dcb3b76408
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Material B.mat
+  - fileID: 89
+    classID: 21
+    packedSize: 1040
+    offset: 380632
+    sourceAssetGUID: 5c8055c65c1ccd8498c3a2132345c35e
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Material D.mat
+  - fileID: 90
+    classID: 21
+    packedSize: 1024
+    offset: 381672
+    sourceAssetGUID: af08c1f210de6234281d826c34e2ad40
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Material A.mat
+  - fileID: 91
+    classID: 21
+    packedSize: 1024
+    offset: 382696
+    sourceAssetGUID: fee339722c08a234f98ac8c1462bdeae
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Material B.mat
+  - fileID: 92
+    classID: 21
+    packedSize: 1024
+    offset: 383720
+    sourceAssetGUID: 9fc3ec47fc74e5743a388c5aa1ed0ad2
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Material C.mat
+  - fileID: 93
+    classID: 21
+    packedSize: 1040
+    offset: 384744
+    sourceAssetGUID: 5793edbf078488846b9ee0d8e2ecd2af
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Material D.mat
+  - fileID: 94
+    classID: 21
+    packedSize: 1024
+    offset: 385784
+    sourceAssetGUID: 1f1a0a80786949d4c974ef1ef57c1ff9
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Material A.mat
+  - fileID: 95
+    classID: 21
+    packedSize: 1040
+    offset: 386808
+    sourceAssetGUID: 2ab9b2f586e1c9a4797516d15ef83065
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Material C.mat
+  - fileID: 96
+    classID: 21
+    packedSize: 1040
+    offset: 387848
+    sourceAssetGUID: 112c436f6560d714da9100339b1b85e6
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Material D.mat
+  - fileID: 97
+    classID: 21
+    packedSize: 1060
+    offset: 388888
+    sourceAssetGUID: af92bede4d0f5724084a4d9899722b08
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      7/Brush 7 Material C.mat
+  - fileID: 98
+    classID: 21
+    packedSize: 1024
+    offset: 389952
+    sourceAssetGUID: 22d1cca38e2d84a44b37123fd37d227a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Material A.mat
+  - fileID: 99
+    classID: 21
+    packedSize: 1024
+    offset: 390976
+    sourceAssetGUID: a58e0bbc931301747a7385d89203c6bf
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Material B.mat
+  - fileID: 100
+    classID: 21
+    packedSize: 1024
+    offset: 392000
+    sourceAssetGUID: bb7ce1cb2a01bd54597fb38740f92099
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Material C.mat
+  - fileID: 101
+    classID: 21
+    packedSize: 1024
+    offset: 393024
+    sourceAssetGUID: 6504054aea9e6e9478a41150862550c1
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Material D.mat
+  - fileID: 102
+    classID: 21
+    packedSize: 916
+    offset: 394048
+    sourceAssetGUID: 27bd770d232781d498e0d6d7b9e51c37
+    buildTimeAssetPath: Assets/Imported/door.mat
+  - fileID: 103
+    classID: 21
+    packedSize: 904
+    offset: 394968
+    sourceAssetGUID: fcc29dfc02ca1c04ba9f8101a3b9b0d9
+    buildTimeAssetPath: Assets/Imported/floor.mat
+  - fileID: 104
+    classID: 21
+    packedSize: 912
+    offset: 395872
+    sourceAssetGUID: 4b6b1a4afc933e84f865cf84f89858a4
+    buildTimeAssetPath: Assets/Imported/greenhouse wall.mat
+  - fileID: 105
+    classID: 21
+    packedSize: 984
+    offset: 396784
+    sourceAssetGUID: 20527f3481f63834a8aeb21c7fe10cce
+    buildTimeAssetPath: Assets/Imported/magicircle.mat
+  - fileID: 106
+    classID: 21
+    packedSize: 936
+    offset: 397768
+    sourceAssetGUID: 035522c9c097245409e7985c5b4f60a5
+    buildTimeAssetPath: Assets/Imported/material_strangeflower.mat
+  - fileID: 107
+    classID: 21
+    packedSize: 912
+    offset: 398704
+    sourceAssetGUID: 293ce9f000c42d24798dc7462f33fe76
+    buildTimeAssetPath: Assets/materials/New Material 2.mat
+  - fileID: 108
+    classID: 21
+    packedSize: 968
+    offset: 399616
+    sourceAssetGUID: bbf2d5d562f35dc4bad44fea583079c6
+    buildTimeAssetPath: Assets/materials/New Material 6.mat
+  - fileID: 109
+    classID: 21
+    packedSize: 912
+    offset: 400584
+    sourceAssetGUID: ce65fa103f0e84b4289374b2a4bf93f8
+    buildTimeAssetPath: Assets/Imported/_GhoulZombie/Ghoul@Animations.fbx
+  - fileID: 110
+    classID: 21
+    packedSize: 908
+    offset: 401496
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 111
+    classID: 21
+    packedSize: 900
+    offset: 402408
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 112
+    classID: 21
+    packedSize: 908
+    offset: 403312
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 113
+    classID: 21
+    packedSize: 908
+    offset: 404224
+    sourceAssetGUID: 340ed05db7df7f84aaba90c83e875370
+    buildTimeAssetPath: Assets/Imported/jar.fbx
+  - fileID: 114
+    classID: 21
+    packedSize: 908
+    offset: 405136
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 115
+    classID: 21
+    packedSize: 904
+    offset: 406048
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 116
+    classID: 28
+    packedSize: 21984
+    offset: 406952
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 117
+    classID: 28
+    packedSize: 699212
+    offset: 428936
+    sourceAssetGUID: 00232590d9a83984b94ad5f4138104a4
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book04_n.png
+  - fileID: 118
+    classID: 28
+    packedSize: 699188
+    offset: 1128152
+    sourceAssetGUID: 01445335764b0e1479b2fca997d2703b
+    buildTimeAssetPath: Assets/Imported/Mugs, Bowls and Plates/Textures/bowl01.png
+  - fileID: 119
+    classID: 28
+    packedSize: 5592564
+    offset: 1827344
+    sourceAssetGUID: 0263ed16ec30b0b46a2a0f1196d11df3
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Albedo A.png
+  - fileID: 120
+    classID: 28
+    packedSize: 87548
+    offset: 7419912
+    sourceAssetGUID: 047c60460ab3dd34c89d9de0c62e90af
+    buildTimeAssetPath: Assets/Imported/Brick Texture LITE/Textures/S1_Black_White/Plane
+      3D_lambert1_Normal.png
+  - fileID: 121
+    classID: 28
+    packedSize: 349668
+    offset: 7507464
+    sourceAssetGUID: 069d81998bdfdd240858cead98faa639
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book11.png
+  - fileID: 122
+    classID: 28
+    packedSize: 5592564
+    offset: 7857136
+    sourceAssetGUID: 06b8c7a94fad33c46bacd3c70a43d47e
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Albedo C.png
+  - fileID: 123
+    classID: 28
+    packedSize: 11068
+    offset: 13449704
+    sourceAssetGUID: 081073d8f2209c949819e1e5872845b3
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      magic star.png
+  - fileID: 124
+    classID: 28
+    packedSize: 174916
+    offset: 13460776
+    sourceAssetGUID: 0d7510ae43f807b448397eecb84d3165
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/Textures/mushroom_pointy_specular.tga
+  - fileID: 125
+    classID: 28
+    packedSize: 699212
+    offset: 13635696
+    sourceAssetGUID: 0dfe433eb631e4348959e7fd235f9fac
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book03_n.png
+  - fileID: 126
+    classID: 28
+    packedSize: 2796348
+    offset: 14334912
+    sourceAssetGUID: 0f30ac02181aec14caabf1c95c610c15
+    buildTimeAssetPath: Assets/Imported/window_BaseColor.png
+  - fileID: 127
+    classID: 28
+    packedSize: 43856
+    offset: 17131264
+    sourceAssetGUID: 132b3a0c2e28bc44dabb27854db18c39
+    buildTimeAssetPath: Assets/Imported/Brick Texture LITE/Textures/S1_Black_White/Plane
+      3D_lambert1_AlbedoTransparency.png
+  - fileID: 128
+    classID: 28
+    packedSize: 5592564
+    offset: 17175120
+    sourceAssetGUID: 134090c3236e2c340aae60d8b0973ea1
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Normal.png
+  - fileID: 129
+    classID: 28
+    packedSize: 699192
+    offset: 22767688
+    sourceAssetGUID: 144797c849da65d4c926bc4e6bf2532f
+    buildTimeAssetPath: Assets/Imported/book upscale.tif
+  - fileID: 130
+    classID: 28
+    packedSize: 699200
+    offset: 23466880
+    sourceAssetGUID: 14e1c66a29fe73bd08c1621a97baa79b
+    buildTimeAssetPath: Assets/Imported/Simple Modular Pillars/Textures/FancyStone-01-lt-p.png
+  - fileID: 131
+    classID: 28
+    packedSize: 5592564
+    offset: 24166080
+    sourceAssetGUID: 14eee33642ce43e47bab799e7621daed
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Albedo D.png
+  - fileID: 132
+    classID: 28
+    packedSize: 43848
+    offset: 29758648
+    sourceAssetGUID: 1e72721b1694d9941876dee6ff532672
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      spikes impact dissolve.png
+  - fileID: 133
+    classID: 28
+    packedSize: 699212
+    offset: 29802496
+    sourceAssetGUID: 1ee2ed93f16c8064691c61fd3e183160
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book06_m.png
+  - fileID: 134
+    classID: 28
+    packedSize: 349668
+    offset: 30501712
+    sourceAssetGUID: 1f85b6b9354c510488f7eee28ee63d7c
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book03.png
+  - fileID: 135
+    classID: 28
+    packedSize: 349668
+    offset: 30851384
+    sourceAssetGUID: 22730c6c955189443b66b51245a62d11
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book12.png
+  - fileID: 136
+    classID: 28
+    packedSize: 5592560
+    offset: 31201056
+    sourceAssetGUID: 22edfafbe20169e4a93634647f7a2afd
+    buildTimeAssetPath: Assets/Imported/Pohon_Diff 1.png
+  - fileID: 137
+    classID: 28
+    packedSize: 5592560
+    offset: 36793616
+    sourceAssetGUID: 23bb2c821f029094da2f2b747e49e3b6
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Lab/Caldron_m.png
+  - fileID: 138
+    classID: 28
+    packedSize: 5592560
+    offset: 42386176
+    sourceAssetGUID: 26fe869250281d749bdc9ca08b7dd379
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Surfaces/WoodOrn_m.png
+  - fileID: 139
+    classID: 28
+    packedSize: 5592560
+    offset: 47978736
+    sourceAssetGUID: 27532e64dcb75394abe9c7275112548f
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Table01_m.png
+  - fileID: 140
+    classID: 28
+    packedSize: 699212
+    offset: 53571296
+    sourceAssetGUID: 2a644dcd58b885f45a72d8c0b008ed91
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book10_n.png
+  - fileID: 141
+    classID: 28
+    packedSize: 1398256
+    offset: 54270512
+    sourceAssetGUID: 2b26c49cdf3250643be2f170ecf9f6cb
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Flasks/Flask02_m.png
+  - fileID: 142
+    classID: 28
+    packedSize: 5592564
+    offset: 55668768
+    sourceAssetGUID: 2c97f07048d7662489a50edc2e314637
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      7/Brush 7 Specular.png
+  - fileID: 143
+    classID: 28
+    packedSize: 2796356
+    offset: 61261336
+    sourceAssetGUID: 2d754d06f4478bb4fb2eb24ca69556a1
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.fbm/blue_butterfly_Albedo.tga
+  - fileID: 144
+    classID: 28
+    packedSize: 349668
+    offset: 64057696
+    sourceAssetGUID: 2fb48a96d068e934a91cd897ce364a68
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book10.png
+  - fileID: 145
+    classID: 28
+    packedSize: 699192
+    offset: 64407368
+    sourceAssetGUID: 31679c4b857f0d140bd9566b86eb8674
+    buildTimeAssetPath: Assets/Imported/Hovl Studio/Procedural fire/Textures/FireSphere1.png
+  - fileID: 146
+    classID: 28
+    packedSize: 349668
+    offset: 65106560
+    sourceAssetGUID: 34721ee888969834ead5fa7f7157c1ba
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book_o.png
+  - fileID: 147
+    classID: 28
+    packedSize: 699212
+    offset: 65456232
+    sourceAssetGUID: 354085e973655114db28a7a6edb395ef
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book10_m.png
+  - fileID: 148
+    classID: 28
+    packedSize: 5592560
+    offset: 66155448
+    sourceAssetGUID: 3546966ba35742344bc20db6cef0d3d5
+    buildTimeAssetPath: Assets/Imported/Pohon_Normal.png
+  - fileID: 149
+    classID: 28
+    packedSize: 5592556
+    offset: 71748008
+    sourceAssetGUID: 392d2b0f719733b4f96dd19ae8e87ee2
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Table01.png
+  - fileID: 150
+    classID: 28
+    packedSize: 2796356
+    offset: 77340568
+    sourceAssetGUID: 3a5ae62c950d81241aef38079863dcb0
+    buildTimeAssetPath: Assets/Imported/Verona_PO_Morion_albedo.jpg
+  - fileID: 151
+    classID: 28
+    packedSize: 174976
+    offset: 80136928
+    sourceAssetGUID: 3b73a50154223fc4fb002e65440310fc
+    buildTimeAssetPath: Assets/Imported/irtsya-seamless-geometric-pattern-on-paper-texture-art-deco-background_u-l-q1k5tzn0.jpg
+  - fileID: 152
+    classID: 28
+    packedSize: 2796356
+    offset: 80311904
+    sourceAssetGUID: 3c14500788dc16343b9506398c3a5d82
+    buildTimeAssetPath: Assets/Imported/Book_covers_BaseColor.png
+  - fileID: 153
+    classID: 28
+    packedSize: 1398256
+    offset: 83108264
+    sourceAssetGUID: 3dce5bac285284a46b6cf77e52dfcd98
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Textures/MagicCircle.png
+  - fileID: 154
+    classID: 28
+    packedSize: 2796344
+    offset: 84506520
+    sourceAssetGUID: 41785ef0e470fdc4b8fbc03640ab7f0f
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Alembic02.png
+  - fileID: 155
+    classID: 28
+    packedSize: 2796344
+    offset: 87302864
+    sourceAssetGUID: 430328a062f83134fab46c39185df669
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Lab/Caldron_o.png
+  - fileID: 156
+    classID: 28
+    packedSize: 5592564
+    offset: 90099208
+    sourceAssetGUID: 491f49a08264ae44383c0db4c6b71c4a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Albedo D.png
+  - fileID: 157
+    classID: 28
+    packedSize: 5592568
+    offset: 95691776
+    sourceAssetGUID: 497d57f3d22564243b89af74550ea549
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Albedo D.png
+  - fileID: 158
+    classID: 28
+    packedSize: 87544
+    offset: 101284344
+    sourceAssetGUID: 4a4bd2804b2d1ff46ab18baabfc526da
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      smoke cloud x4.png
+  - fileID: 159
+    classID: 28
+    packedSize: 2796340
+    offset: 101371888
+    sourceAssetGUID: 4acf83895cd5e7e4e82e94f2c6bddd1c
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Jar/Jar_m.png
+  - fileID: 160
+    classID: 28
+    packedSize: 5592564
+    offset: 104168232
+    sourceAssetGUID: 4b7179beea1a73348964df257c9ab941
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Normal.png
+  - fileID: 161
+    classID: 28
+    packedSize: 5592556
+    offset: 109760800
+    sourceAssetGUID: 50588ec843ebddd40bc02e6f6be23a95
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Jar/Jar_n.png
+  - fileID: 162
+    classID: 28
+    packedSize: 699188
+    offset: 115353360
+    sourceAssetGUID: 544a79a89f798c847bec8c3eaeaf713b
+    buildTimeAssetPath: Assets/Imported/finger.png
+  - fileID: 163
+    classID: 28
+    packedSize: 699212
+    offset: 116052552
+    sourceAssetGUID: 5b15072a9457f8c40b0e0fbab363891f
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book12_m.png
+  - fileID: 164
+    classID: 28
+    packedSize: 349668
+    offset: 116751768
+    sourceAssetGUID: 5bc367965afebd74d93c3e60a89ec70d
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book05b.png
+  - fileID: 165
+    classID: 28
+    packedSize: 5592564
+    offset: 117101440
+    sourceAssetGUID: 5eccb90070f720d4892a450b9dcc164e
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Albedo A.png
+  - fileID: 166
+    classID: 28
+    packedSize: 5592564
+    offset: 122694008
+    sourceAssetGUID: 61d2cbc743ac1dd499b48dc27820075a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Albedo B.png
+  - fileID: 167
+    classID: 28
+    packedSize: 5592568
+    offset: 128286576
+    sourceAssetGUID: 62961cc5b22286c478180b402bfd7de2
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Albedo A.png
+  - fileID: 168
+    classID: 28
+    packedSize: 349668
+    offset: 133879144
+    sourceAssetGUID: 63ddd66d587be5d47ad53eb4a132578d
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book05c.png
+  - fileID: 169
+    classID: 28
+    packedSize: 1516
+    offset: 134228816
+    sourceAssetGUID: 640e93060c8b460449dc5d4f16193387
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Textures/Point1.png
+  - fileID: 170
+    classID: 28
+    packedSize: 1398268
+    offset: 134230336
+    sourceAssetGUID: 66a3c0f7a9647684a9f6f7f753b73930
+    buildTimeAssetPath: Assets/Imported/base_color_skech_update.png
+  - fileID: 171
+    classID: 28
+    packedSize: 2796344
+    offset: 135628608
+    sourceAssetGUID: 6881b345aafeffe4090004c3e526c805
+    buildTimeAssetPath: Assets/Imported/Table_albedo.jpeg
+  - fileID: 172
+    classID: 28
+    packedSize: 699212
+    offset: 138424952
+    sourceAssetGUID: 6f440ac6f1e030f48a1f6f4028562d6b
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book01_n.png
+  - fileID: 173
+    classID: 28
+    packedSize: 2796352
+    offset: 139124168
+    sourceAssetGUID: 70f785d6ca725bf4baffa5bf2265d118
+    buildTimeAssetPath: Assets/Imported/T_Dbarnes_Bshelf_BC.png
+  - fileID: 174
+    classID: 28
+    packedSize: 5592568
+    offset: 141920520
+    sourceAssetGUID: 727e3ac99a8d3064aa8c601e77239784
+    buildTimeAssetPath: Assets/Imported/Cobwebs Pack/Texture/Cobwebs_BaseColor.png
+  - fileID: 175
+    classID: 28
+    packedSize: 5592568
+    offset: 147513088
+    sourceAssetGUID: 7307144979bf7df459af1937d7a73ace
+    buildTimeAssetPath: Assets/Imported/_GhoulZombie/Ghoul_Volume4_color.png
+  - fileID: 176
+    classID: 28
+    packedSize: 1398256
+    offset: 153105656
+    sourceAssetGUID: 752f7c89203faf542981f0c24b7921f8
+    buildTimeAssetPath: Assets/Imported/Stone-Normal.png
+  - fileID: 177
+    classID: 28
+    packedSize: 349668
+    offset: 154503912
+    sourceAssetGUID: 75747f63441f2ff47a6703fa41dbd08b
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book09b.png
+  - fileID: 178
+    classID: 28
+    packedSize: 5592556
+    offset: 154853584
+    sourceAssetGUID: 75a20fcb840321342884996b145e2d92
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Lab/Caldron.png
+  - fileID: 179
+    classID: 28
+    packedSize: 699212
+    offset: 160446144
+    sourceAssetGUID: 76d7a99380bab1144b403ecffd2a7ed7
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book09_n.png
+  - fileID: 180
+    classID: 28
+    packedSize: 2796340
+    offset: 161145360
+    sourceAssetGUID: 774a915830d7edf46a0423dad8b5453d
+    buildTimeAssetPath: Assets/Imported/emissive.png
+  - fileID: 181
+    classID: 28
+    packedSize: 349668
+    offset: 163941704
+    sourceAssetGUID: 7761b859816facc448e961df573136f3
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book01.png
+  - fileID: 182
+    classID: 28
+    packedSize: 349668
+    offset: 164291376
+    sourceAssetGUID: 79ec7af3084518b45a3bba305bde03ab
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book04.png
+  - fileID: 183
+    classID: 28
+    packedSize: 2796344
+    offset: 164641048
+    sourceAssetGUID: 7a0210d44a75b8f4e884f089492efaaf
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Surfaces/WoodOrn01.png
+  - fileID: 184
+    classID: 28
+    packedSize: 2796356
+    offset: 167437392
+    sourceAssetGUID: 7c0d2fea6ca3ae347ac54317c0fa0b89
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.fbm/green_butterfly_Albedo.tga
+  - fileID: 185
+    classID: 28
+    packedSize: 5592568
+    offset: 170233752
+    sourceAssetGUID: 7e7925ef66acefe4090d386368d6bf09
+    buildTimeAssetPath: Assets/Imported/RoseinVaseAlbedo_T2.png
+  - fileID: 186
+    classID: 28
+    packedSize: 5592564
+    offset: 175826320
+    sourceAssetGUID: 7ea51dea5a2a6cf4bb23a2eaa7e2393f
+    buildTimeAssetPath: Assets/Imported/magiccircle new.png
+  - fileID: 187
+    classID: 28
+    packedSize: 699212
+    offset: 181418888
+    sourceAssetGUID: 803d13dd3966246488a852d6c5ff1243
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book04_m.png
+  - fileID: 188
+    classID: 28
+    packedSize: 5592560
+    offset: 182118104
+    sourceAssetGUID: 813905184ab9f7242a656597215bde5f
+    buildTimeAssetPath: Assets/Imported/Pohon_Diff.png
+  - fileID: 189
+    classID: 28
+    packedSize: 349668
+    offset: 187710664
+    sourceAssetGUID: 824c7047d5280654daa3f73376dc7600
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book09e.png
+  - fileID: 190
+    classID: 28
+    packedSize: 848
+    offset: 188060336
+    sourceAssetGUID: 851bab4bc28a67d47b301a47a0b7ba7f
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      stretch trait.png
+  - fileID: 191
+    classID: 28
+    packedSize: 699196
+    offset: 188061184
+    sourceAssetGUID: 866bd5b5761c92744ae2dc90d7a758c1
+    buildTimeAssetPath: Assets/Imported/Stone-Diffuse3.png
+  - fileID: 192
+    classID: 28
+    packedSize: 5592564
+    offset: 188760384
+    sourceAssetGUID: 88be389e221ccdd4d8ce10e7bd6cdb6e
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      7/Brush 7 Normal.png
+  - fileID: 193
+    classID: 28
+    packedSize: 2796348
+    offset: 194352952
+    sourceAssetGUID: 8b30913464d207e4b8b2525addecfd1f
+    buildTimeAssetPath: Assets/Imported/albedometal-v2.png
+  - fileID: 194
+    classID: 28
+    packedSize: 11084
+    offset: 197149304
+    sourceAssetGUID: 8d435dfcfea1eb64dba196af2f9490f4
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      explosion smoke dissolve.png
+  - fileID: 195
+    classID: 28
+    packedSize: 699212
+    offset: 197160392
+    sourceAssetGUID: 8f306689e59a2f94989007b0eabf4153
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book03_m.png
+  - fileID: 196
+    classID: 28
+    packedSize: 5592564
+    offset: 197859608
+    sourceAssetGUID: 8fc26d5f92e4a51499ffa5961553f506
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      7/Brush 7 Albedo C.png
+  - fileID: 197
+    classID: 28
+    packedSize: 699212
+    offset: 203452176
+    sourceAssetGUID: 9032d34c7c7635d48aca512a64153deb
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book11_n.png
+  - fileID: 198
+    classID: 28
+    packedSize: 87552
+    offset: 204151392
+    sourceAssetGUID: 914231f4fc2a7194b9323d6e2cf86df0
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      explosion smoke alpha.png
+  - fileID: 199
+    classID: 28
+    packedSize: 5592580
+    offset: 204238944
+    sourceAssetGUID: 9729ae53000d4c14d9274a8fa2639375
+    buildTimeAssetPath: Assets/Imported/DefaultMaterial_BaseColor_combo.png
+  - fileID: 200
+    classID: 28
+    packedSize: 87564
+    offset: 209831528
+    sourceAssetGUID: 9adc797bda473d94f9a5ba6cb844b43d
+    buildTimeAssetPath: Assets/Imported/360_F_463618303_NlFS8G3pkg3x7ykLHO0nUm0enBNIcruy.jpg
+  - fileID: 201
+    classID: 28
+    packedSize: 43852
+    offset: 209919096
+    sourceAssetGUID: a19154c5a84e906469922890c029a7f8
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      ring ice.png
+  - fileID: 202
+    classID: 28
+    packedSize: 5592564
+    offset: 209962952
+    sourceAssetGUID: a312906459a2f1148949f83c1b59177d
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Albedo D.png
+  - fileID: 203
+    classID: 28
+    packedSize: 5592560
+    offset: 215555520
+    sourceAssetGUID: a344e2df9b1718e489b9645c3f7e349f
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Surfaces/Blackboard_m.png
+  - fileID: 204
+    classID: 28
+    packedSize: 5592564
+    offset: 221148080
+    sourceAssetGUID: a74d2f85bed757f499645c72490fdd54
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Specular.png
+  - fileID: 205
+    classID: 28
+    packedSize: 699212
+    offset: 226740648
+    sourceAssetGUID: a8fb5ac5ea4d65c469de2398c1f1b2a5
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book09_m.png
+  - fileID: 206
+    classID: 28
+    packedSize: 699212
+    offset: 227439864
+    sourceAssetGUID: abe8aabacaff71e4095d39621b1eb2c1
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book06_n.png
+  - fileID: 207
+    classID: 28
+    packedSize: 43840
+    offset: 228139080
+    sourceAssetGUID: ac41fdcd17fc3634c80841c01775dd35
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      spikes impact.png
+  - fileID: 208
+    classID: 28
+    packedSize: 5592564
+    offset: 228182920
+    sourceAssetGUID: ac60d95f8349c8541b1f2130261f4591
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      9/Brush 9 Albedo C.png
+  - fileID: 209
+    classID: 28
+    packedSize: 5592564
+    offset: 233775488
+    sourceAssetGUID: ad955c246d85c2147bb2f93ae9376d49
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Albedo C.png
+  - fileID: 210
+    classID: 28
+    packedSize: 5592564
+    offset: 239368056
+    sourceAssetGUID: b016b96cfb26df84b9e75e3d3d06c02c
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Albedo A.png
+  - fileID: 211
+    classID: 28
+    packedSize: 349692
+    offset: 244960624
+    sourceAssetGUID: b2dfb1b456d9a3f40be6067be060dbc0
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/Textures/mushroom_pointy_normal.tga
+  - fileID: 212
+    classID: 28
+    packedSize: 5592564
+    offset: 245310320
+    sourceAssetGUID: b37aa629f77ebb344803b7e764eec92a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Albedo B.png
+  - fileID: 213
+    classID: 28
+    packedSize: 5592564
+    offset: 250902888
+    sourceAssetGUID: b52285a00f52030419d9351ebc1c6cba
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      4/Brush 4 Specular.png
+  - fileID: 214
+    classID: 28
+    packedSize: 699212
+    offset: 256495456
+    sourceAssetGUID: b52411630cf81f64fbd17d34111ef10d
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book05_n.png
+  - fileID: 215
+    classID: 28
+    packedSize: 5592564
+    offset: 257194672
+    sourceAssetGUID: b9da7f475957aaa42bd9afbc373054ea
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      5/Brush 5 Specular.png
+  - fileID: 216
+    classID: 28
+    packedSize: 699192
+    offset: 262787240
+    sourceAssetGUID: b9fb2c1c0ecc57b43be9a1e38c951b6d
+    buildTimeAssetPath: Assets/Imported/Mugs, Bowls and Plates/Textures/bowl01_ao.png
+  - fileID: 217
+    classID: 28
+    packedSize: 1398264
+    offset: 263486432
+    sourceAssetGUID: ba0d4fafcd6691c41bc63075c3234454
+    buildTimeAssetPath: Assets/Imported/daun_diff_combo 1.png
+  - fileID: 218
+    classID: 28
+    packedSize: 349688
+    offset: 264884696
+    sourceAssetGUID: bc1b49c370ed9c848901c6e651b3bc7d
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/Textures/mushroom_wavy_normal.tga
+  - fileID: 219
+    classID: 28
+    packedSize: 699212
+    offset: 265234384
+    sourceAssetGUID: bc4e8b65a4aa6ac41816de854285c707
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book12_n.png
+  - fileID: 220
+    classID: 28
+    packedSize: 5616
+    offset: 265933600
+    sourceAssetGUID: c08b3b0c3f6cf7c4f97be55c047834fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      hit triangle.png
+  - fileID: 221
+    classID: 28
+    packedSize: 11080
+    offset: 265939216
+    sourceAssetGUID: c1819aef53deedf40af80257ccb5b1a8
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      smoke cloud x4 dissolve.png
+  - fileID: 222
+    classID: 28
+    packedSize: 43832
+    offset: 265950296
+    sourceAssetGUID: c25bb18693752e448bd4c70a50910409
+    buildTimeAssetPath: Assets/Imported/magiccircle.png
+  - fileID: 223
+    classID: 28
+    packedSize: 699212
+    offset: 265994128
+    sourceAssetGUID: c67fc360e119d2e42a7ef3c86d957319
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book05_m.png
+  - fileID: 224
+    classID: 28
+    packedSize: 349676
+    offset: 266693344
+    sourceAssetGUID: c829f3f833484ac45b5b9150cb06631c
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Textures/Mask1.png
+  - fileID: 225
+    classID: 28
+    packedSize: 11084
+    offset: 267043024
+    sourceAssetGUID: cbe9410b182e9cd4787d6f068c564ad7
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      explosion second color map.png
+  - fileID: 226
+    classID: 28
+    packedSize: 43836
+    offset: 267054112
+    sourceAssetGUID: ccb58def4933d4e46b7a1fc023bf6259
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      aura runic.png
+  - fileID: 227
+    classID: 28
+    packedSize: 699212
+    offset: 267097952
+    sourceAssetGUID: ce591968d885f9b4a881315f89878906
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book11_m.png
+  - fileID: 228
+    classID: 28
+    packedSize: 699196
+    offset: 267797168
+    sourceAssetGUID: cfd3c46671a315d488380a045655e01d
+    buildTimeAssetPath: Assets/Imported/greenhouse floor.png
+  - fileID: 229
+    classID: 28
+    packedSize: 349668
+    offset: 268496368
+    sourceAssetGUID: d0a241c4dc42c1244ba634b92889eab9
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book06b.png
+  - fileID: 230
+    classID: 28
+    packedSize: 2796344
+    offset: 268846040
+    sourceAssetGUID: d0f96096130c2414e8d255d8e038d6fa
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Table01_o.png
+  - fileID: 231
+    classID: 28
+    packedSize: 174912
+    offset: 271642384
+    sourceAssetGUID: d294f8d5848123b42972a91330444799
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/Textures/mushroom_pointy_pink.tga
+  - fileID: 232
+    classID: 28
+    packedSize: 1398252
+    offset: 271817296
+    sourceAssetGUID: d589d8f0d1282774d9eaebfc48b254d4
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Flasks/Flask02.png
+  - fileID: 233
+    classID: 28
+    packedSize: 87560
+    offset: 273215552
+    sourceAssetGUID: d5d9ede85998e6d42943a86fc3a28617
+    buildTimeAssetPath: Assets/Imported/Brick Texture LITE/Textures/S1_Black_White/Plane
+      3D_lambert1_MetallicSmoothness.png
+  - fileID: 234
+    classID: 28
+    packedSize: 1398260
+    offset: 273303112
+    sourceAssetGUID: d870eef4b18d7514f98cf0cd88ce7aba
+    buildTimeAssetPath: Assets/Imported/Daun_Diff_combo.png
+  - fileID: 235
+    classID: 28
+    packedSize: 5592552
+    offset: 274701376
+    sourceAssetGUID: d8b5858c3035130449dbc8ab616ce02e
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Jar/Jar.png
+  - fileID: 236
+    classID: 28
+    packedSize: 699212
+    offset: 280293928
+    sourceAssetGUID: dcb2e4d80efa67f4787c00f7d762ced1
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book01_m.png
+  - fileID: 237
+    classID: 28
+    packedSize: 2796356
+    offset: 280993144
+    sourceAssetGUID: de9cf671154cda64ba2e8e4dd9200fd4
+    buildTimeAssetPath: Assets/Imported/magiccircle new emission.png
+  - fileID: 238
+    classID: 28
+    packedSize: 699216
+    offset: 283789504
+    sourceAssetGUID: e195f16e598d89544a17abfdb065f922
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book09b_m.png
+  - fileID: 239
+    classID: 28
+    packedSize: 5592568
+    offset: 284488720
+    sourceAssetGUID: e63709a8f6b899547b8f20c8e15f62c5
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Specular.png
+  - fileID: 240
+    classID: 28
+    packedSize: 349668
+    offset: 290081288
+    sourceAssetGUID: e92a84a65c2e5424a96c68b880394faa
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Items/Books/Book05.png
+  - fileID: 241
+    classID: 28
+    packedSize: 1524
+    offset: 290430960
+    sourceAssetGUID: ea08f0da7f459e147ba80e6dd6e38bb9
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      stretch ray blur.png
+  - fileID: 242
+    classID: 28
+    packedSize: 2796344
+    offset: 290432488
+    sourceAssetGUID: ea8683e961a77604888fe76f52b5b29b
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Surfaces/Blackboard01.png
+  - fileID: 243
+    classID: 28
+    packedSize: 5592560
+    offset: 293228832
+    sourceAssetGUID: ece144273135f8143b541e84468f3c92
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Table01_n.png
+  - fileID: 244
+    classID: 28
+    packedSize: 1398256
+    offset: 298821392
+    sourceAssetGUID: efc923c55e0898f45b8709c29eef39a7
+    buildTimeAssetPath: Assets/Imported/Akar_Opcaity.png
+  - fileID: 245
+    classID: 28
+    packedSize: 174912
+    offset: 300219648
+    sourceAssetGUID: f09564b5398956d44a976dbabd5e06c0
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Materials/Textures/mushroom_pointy_blue.tga
+  - fileID: 246
+    classID: 28
+    packedSize: 5592568
+    offset: 300394560
+    sourceAssetGUID: f505ea945eabed14aae8b1b12bdb4a55
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Albedo B.png
+  - fileID: 247
+    classID: 28
+    packedSize: 699212
+    offset: 305987128
+    sourceAssetGUID: f5db774c9826cfe4699ced8290ab2899
+    buildTimeAssetPath: Assets/Imported/Flower_DefaultMaterial_BaseColor.png
+  - fileID: 248
+    classID: 28
+    packedSize: 5592560
+    offset: 306686344
+    sourceAssetGUID: f84d318d608dc7945b1dc94aa848ae12
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Textures/Furniture/Alembic02_m.png
+  - fileID: 249
+    classID: 28
+    packedSize: 5624
+    offset: 312278904
+    sourceAssetGUID: fb6973fd296f0164f9879f3cb40f8b8b
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      hit triangle dissolve.png
+  - fileID: 250
+    classID: 28
+    packedSize: 2796356
+    offset: 312284528
+    sourceAssetGUID: fdd4010de9f0ab34faeeb7184dffe77a
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.fbm/orange_butterfly_Albedo.tga
+  - fileID: 251
+    classID: 28
+    packedSize: 699192
+    offset: 315080888
+    sourceAssetGUID: fe68990033a29534399892d17daacba2
+    buildTimeAssetPath: Assets/Imported/Mugs, Bowls and Plates/Textures/bowl01_rgh.png
+  - fileID: 252
+    classID: 28
+    packedSize: 5592564
+    offset: 315780080
+    sourceAssetGUID: fe7a3cf2feef22c46907d18ea0927599
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Materials/Brush
+      10/Brush 10 Normal.png
+  - fileID: 253
+    classID: 28
+    packedSize: 699212
+    offset: 321372648
+    sourceAssetGUID: ff05f8a25f25c0643b11aac7091ffe34
+    buildTimeAssetPath: Assets/Imported/Flower_DefaultMaterial_Emissive.png
+  - fileID: 254
+    classID: 28
+    packedSize: 1398264
+    offset: 322071864
+    sourceAssetGUID: ff86e881dd7d138458c5e686a4782187
+    buildTimeAssetPath: Assets/Imported/daun_diff_2_combo.png
+  - fileID: 255
+    classID: 43
+    packedSize: 5496
+    offset: 323470128
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 256
+    classID: 43
+    packedSize: 5496
+    offset: 323475624
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 257
+    classID: 43
+    packedSize: 11212
+    offset: 323481120
+    sourceAssetGUID: ab5d4e6dff9fba242b4b0d5573712507
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      7/Bluntspear 2.fbx
+  - fileID: 258
+    classID: 43
+    packedSize: 489340
+    offset: 323492336
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 259
+    classID: 43
+    packedSize: 14008
+    offset: 323981680
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 260
+    classID: 43
+    packedSize: 1499212
+    offset: 323995688
+    sourceAssetGUID: 4232762fe534bdf43b54643ae5f3e33d
+    buildTimeAssetPath: Assets/Imported/Jacaranda tree.fbx
+  - fileID: 261
+    classID: 43
+    packedSize: 5496
+    offset: 325494904
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 262
+    classID: 43
+    packedSize: 5496
+    offset: 325500400
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 263
+    classID: 43
+    packedSize: 1652
+    offset: 325505896
+    sourceAssetGUID: 1430763e9757ab24788703faa9861acf
+    buildTimeAssetPath: Assets/Imported/Cobwebs Pack/Model/SM_Cobwebs_03.fbx
+  - fileID: 264
+    classID: 43
+    packedSize: 63596
+    offset: 325507552
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 265
+    classID: 43
+    packedSize: 5496
+    offset: 325571152
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 266
+    classID: 43
+    packedSize: 5496
+    offset: 325576648
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 267
+    classID: 43
+    packedSize: 5496
+    offset: 325582144
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 268
+    classID: 43
+    packedSize: 16812
+    offset: 325587640
+    sourceAssetGUID: cb863e8cbaaead898a3e47a143c03d7f
+    buildTimeAssetPath: Assets/Imported/Simple Modular Pillars/Meshes/Pillars.fbx
+  - fileID: 269
+    classID: 43
+    packedSize: 5496
+    offset: 325604456
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 270
+    classID: 43
+    packedSize: 5496
+    offset: 325609952
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 271
+    classID: 43
+    packedSize: 5496
+    offset: 325615448
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 272
+    classID: 43
+    packedSize: 12004
+    offset: 325620944
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 273
+    classID: 43
+    packedSize: 5496
+    offset: 325632952
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 274
+    classID: 43
+    packedSize: 1402464
+    offset: 325638448
+    sourceAssetGUID: f05e2eb44f4ddc04c8d6e86f9f536ad8
+    buildTimeAssetPath: Assets/Imported/SM_Dbarnes_Bookshelf.fbx
+  - fileID: 275
+    classID: 43
+    packedSize: 5496
+    offset: 327040912
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 276
+    classID: 43
+    packedSize: 5496
+    offset: 327046408
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 277
+    classID: 43
+    packedSize: 63596
+    offset: 327051904
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 278
+    classID: 43
+    packedSize: 548504
+    offset: 327115504
+    sourceAssetGUID: 3568cfec1d0887842a60a594eac7ea7b
+    buildTimeAssetPath: Assets/Imported/moonlight ash tree.fbx
+  - fileID: 279
+    classID: 43
+    packedSize: 24636
+    offset: 327664008
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 280
+    classID: 43
+    packedSize: 5496
+    offset: 327688648
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 281
+    classID: 43
+    packedSize: 5496
+    offset: 327694144
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 282
+    classID: 43
+    packedSize: 5496
+    offset: 327699640
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 283
+    classID: 43
+    packedSize: 5496
+    offset: 327705136
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 284
+    classID: 43
+    packedSize: 5496
+    offset: 327710632
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 285
+    classID: 43
+    packedSize: 191476
+    offset: 327716128
+    sourceAssetGUID: 7b96d33344848cd4d820c00b197cd727
+    buildTimeAssetPath: Assets/Imported/model (no texture).fbx
+  - fileID: 286
+    classID: 43
+    packedSize: 5496
+    offset: 327907608
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 287
+    classID: 43
+    packedSize: 5496
+    offset: 327913104
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 288
+    classID: 43
+    packedSize: 5496
+    offset: 327918600
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 289
+    classID: 43
+    packedSize: 142204
+    offset: 327924096
+    sourceAssetGUID: f727a4f442e55044ea6bc8d6b9e6c28f
+    buildTimeAssetPath: Assets/Imported/nimbus willow tree.fbx
+  - fileID: 290
+    classID: 43
+    packedSize: 11428
+    offset: 328066304
+    sourceAssetGUID: 03a7c2178bc8fd644a59ed2ffb05f560
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      9/Padder Pod 2.fbx
+  - fileID: 291
+    classID: 43
+    packedSize: 5496
+    offset: 328077736
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 292
+    classID: 43
+    packedSize: 5496
+    offset: 328083232
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 293
+    classID: 43
+    packedSize: 5496
+    offset: 328088728
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 294
+    classID: 43
+    packedSize: 5496
+    offset: 328094224
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 295
+    classID: 43
+    packedSize: 2172
+    offset: 328099720
+    sourceAssetGUID: c0cda3dcdf9a5b54789950b0245e1530
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Accessory Vine.fbx
+  - fileID: 296
+    classID: 43
+    packedSize: 217988
+    offset: 328101896
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 297
+    classID: 43
+    packedSize: 5644
+    offset: 328319888
+    sourceAssetGUID: 3369a795a1d97d14fa7784971171ad18
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      10/Hag Root 1.fbx
+  - fileID: 298
+    classID: 43
+    packedSize: 5496
+    offset: 328325536
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 299
+    classID: 43
+    packedSize: 5496
+    offset: 328331032
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 300
+    classID: 43
+    packedSize: 5496
+    offset: 328336528
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 301
+    classID: 43
+    packedSize: 259412
+    offset: 328342024
+    sourceAssetGUID: 8d8256be04612a546aaffee575baab9b
+    buildTimeAssetPath: Assets/Imported/Sketchfab_2019_11_09_16_54_41.fbx
+  - fileID: 302
+    classID: 43
+    packedSize: 5496
+    offset: 328601440
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 303
+    classID: 43
+    packedSize: 5496
+    offset: 328606936
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 304
+    classID: 43
+    packedSize: 790112
+    offset: 328612432
+    sourceAssetGUID: f727a4f442e55044ea6bc8d6b9e6c28f
+    buildTimeAssetPath: Assets/Imported/nimbus willow tree.fbx
+  - fileID: 305
+    classID: 43
+    packedSize: 5496
+    offset: 329402544
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 306
+    classID: 43
+    packedSize: 5496
+    offset: 329408040
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 307
+    classID: 43
+    packedSize: 5496
+    offset: 329413536
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 308
+    classID: 43
+    packedSize: 5496
+    offset: 329419032
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 309
+    classID: 43
+    packedSize: 5496
+    offset: 329424528
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 310
+    classID: 43
+    packedSize: 5496
+    offset: 329430024
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 311
+    classID: 43
+    packedSize: 10292
+    offset: 329435520
+    sourceAssetGUID: ebcd6da93d3f49a4fbbec1bbc357001e
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Circular.fbx
+  - fileID: 312
+    classID: 43
+    packedSize: 5496
+    offset: 329445816
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 313
+    classID: 43
+    packedSize: 5496
+    offset: 329451312
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 314
+    classID: 43
+    packedSize: 14856
+    offset: 329456808
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 315
+    classID: 43
+    packedSize: 13708
+    offset: 329471664
+    sourceAssetGUID: 65d90ecfe39e09b4f8914c6bc0f8a939
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      9/Basin Bush.fbx
+  - fileID: 316
+    classID: 43
+    packedSize: 5496
+    offset: 329485376
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 317
+    classID: 43
+    packedSize: 5496
+    offset: 329490872
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 318
+    classID: 43
+    packedSize: 1916
+    offset: 329496368
+    sourceAssetGUID: fdbf15ff874665944a1652aa500b0578
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Ledge Backless.fbx
+  - fileID: 319
+    classID: 43
+    packedSize: 5496
+    offset: 329498288
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 320
+    classID: 43
+    packedSize: 5496
+    offset: 329503784
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 321
+    classID: 43
+    packedSize: 5496
+    offset: 329509280
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 322
+    classID: 43
+    packedSize: 5496
+    offset: 329514776
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 323
+    classID: 43
+    packedSize: 5496
+    offset: 329520272
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 324
+    classID: 43
+    packedSize: 6916
+    offset: 329525768
+    sourceAssetGUID: 05b6dd3ae3cbcc047af04be5280fb4d8
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Corner.fbx
+  - fileID: 325
+    classID: 43
+    packedSize: 5496
+    offset: 329532688
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 326
+    classID: 43
+    packedSize: 5496
+    offset: 329538184
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 327
+    classID: 43
+    packedSize: 5496
+    offset: 329543680
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 328
+    classID: 43
+    packedSize: 176140
+    offset: 329549176
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 329
+    classID: 43
+    packedSize: 5496
+    offset: 329725320
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 330
+    classID: 43
+    packedSize: 5496
+    offset: 329730816
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 331
+    classID: 43
+    packedSize: 5496
+    offset: 329736312
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 332
+    classID: 43
+    packedSize: 5496
+    offset: 329741808
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 333
+    classID: 43
+    packedSize: 5496
+    offset: 329747304
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 334
+    classID: 43
+    packedSize: 5496
+    offset: 329752800
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 335
+    classID: 43
+    packedSize: 5496
+    offset: 329758296
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 336
+    classID: 43
+    packedSize: 5496
+    offset: 329763792
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 337
+    classID: 43
+    packedSize: 5496
+    offset: 329769288
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 338
+    classID: 43
+    packedSize: 5496
+    offset: 329774784
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 339
+    classID: 43
+    packedSize: 76352
+    offset: 329780280
+    sourceAssetGUID: d781e33208736db42823fe04fdb8f6d2
+    buildTimeAssetPath: Assets/Imported/cave 1.fbx
+  - fileID: 340
+    classID: 43
+    packedSize: 5496
+    offset: 329856632
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 341
+    classID: 43
+    packedSize: 5496
+    offset: 329862128
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 342
+    classID: 43
+    packedSize: 5496
+    offset: 329867624
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 343
+    classID: 43
+    packedSize: 5496
+    offset: 329873120
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 344
+    classID: 43
+    packedSize: 5496
+    offset: 329878616
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 345
+    classID: 43
+    packedSize: 5496
+    offset: 329884112
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 346
+    classID: 43
+    packedSize: 5496
+    offset: 329889608
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 347
+    classID: 43
+    packedSize: 5496
+    offset: 329895104
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 348
+    classID: 43
+    packedSize: 5496
+    offset: 329900600
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 349
+    classID: 43
+    packedSize: 676768
+    offset: 329906096
+    sourceAssetGUID: 6406bb07c80ba9a4ca62b4091495fdc1
+    buildTimeAssetPath: Assets/Imported/clam merged.fbx
+  - fileID: 350
+    classID: 43
+    packedSize: 5496
+    offset: 330582864
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 351
+    classID: 43
+    packedSize: 5496
+    offset: 330588360
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 352
+    classID: 43
+    packedSize: 5496
+    offset: 330593856
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 353
+    classID: 43
+    packedSize: 94688
+    offset: 330599352
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 354
+    classID: 43
+    packedSize: 5496
+    offset: 330694040
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 355
+    classID: 43
+    packedSize: 6628
+    offset: 330699536
+    sourceAssetGUID: b05b2fa6303da7b4da762160cbeaba91
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      10/Hag Root 2.fbx
+  - fileID: 356
+    classID: 43
+    packedSize: 5496
+    offset: 330706168
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 357
+    classID: 43
+    packedSize: 5496
+    offset: 330711664
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 358
+    classID: 43
+    packedSize: 5496
+    offset: 330717160
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 359
+    classID: 43
+    packedSize: 5496
+    offset: 330722656
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 360
+    classID: 43
+    packedSize: 216228
+    offset: 330728152
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 361
+    classID: 43
+    packedSize: 63596
+    offset: 330944384
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 362
+    classID: 43
+    packedSize: 5496
+    offset: 331007984
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 363
+    classID: 43
+    packedSize: 63592
+    offset: 331013480
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 364
+    classID: 43
+    packedSize: 116892
+    offset: 331077072
+    sourceAssetGUID: 4232762fe534bdf43b54643ae5f3e33d
+    buildTimeAssetPath: Assets/Imported/Jacaranda tree.fbx
+  - fileID: 365
+    classID: 43
+    packedSize: 5496
+    offset: 331193968
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 366
+    classID: 43
+    packedSize: 5496
+    offset: 331199464
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 367
+    classID: 43
+    packedSize: 1472
+    offset: 331204960
+    sourceAssetGUID: bd8a92b47db41f644ae7188f06a986a2
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      magic star mesh.asset
+  - fileID: 368
+    classID: 43
+    packedSize: 4516
+    offset: 331206432
+    sourceAssetGUID: 928806a91d0b01541aa11e36bb755ab7
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr
+      spikes impact mesh.asset
+  - fileID: 369
+    classID: 43
+    packedSize: 1092
+    offset: 331210952
+    sourceAssetGUID: a78b06c58d03f5d4fbb74ba21020241e
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr
+      ring mesh.asset
+  - fileID: 370
+    classID: 43
+    packedSize: 7416
+    offset: 331212048
+    sourceAssetGUID: 009b9f48a477a2a4ab577cb2c1cf61fe
+    buildTimeAssetPath: Assets/Imported/Grimoire/book.FBX
+  - fileID: 371
+    classID: 43
+    packedSize: 20692
+    offset: 331219464
+    sourceAssetGUID: 025553b728ff5764db5dfc01c336a53d
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Bottles/Flask06.FBX
+  - fileID: 372
+    classID: 43
+    packedSize: 20856
+    offset: 331240160
+    sourceAssetGUID: 0eff981a16f2c8440a3fcd9c00b5e402
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Models/mushroom_pointy.fbx
+  - fileID: 373
+    classID: 43
+    packedSize: 9000
+    offset: 331261016
+    sourceAssetGUID: 51ec20c97ee0e0549991b21cf5cbdce8
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Furniture/Board.FBX
+  - fileID: 374
+    classID: 43
+    packedSize: 9124
+    offset: 331270016
+    sourceAssetGUID: 60694673404b80d45920d4cb862f845a
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Books/Book02.FBX
+  - fileID: 375
+    classID: 43
+    packedSize: 372152
+    offset: 331279144
+    sourceAssetGUID: 6a7a03246af1eec45a4a6226bd0ffa6b
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Lab/Alembic02.FBX
+  - fileID: 376
+    classID: 43
+    packedSize: 11112
+    offset: 331651296
+    sourceAssetGUID: 7c83c5368a90fed4a8af73e476d9a3f0
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Bottles/Flask05.FBX
+  - fileID: 377
+    classID: 43
+    packedSize: 63348
+    offset: 331662408
+    sourceAssetGUID: 88c6b5a5ddb41534b86cbcde7d44912f
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Lab/Caldron.FBX
+  - fileID: 378
+    classID: 43
+    packedSize: 29048
+    offset: 331725760
+    sourceAssetGUID: 8f28708aab45e9c48a951b5c627f55cd
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Bottles/Jar.FBX
+  - fileID: 379
+    classID: 43
+    packedSize: 97024
+    offset: 331754808
+    sourceAssetGUID: bb40061f706ebe24f97ee0e0f8de8b99
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Furniture/Table.FBX
+  - fileID: 380
+    classID: 43
+    packedSize: 70376
+    offset: 331851832
+    sourceAssetGUID: bf1b95fba89fb2e438e098ef4361e389
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.FBX
+  - fileID: 381
+    classID: 43
+    packedSize: 708300
+    offset: 331922208
+    sourceAssetGUID: ce65fa103f0e84b4289374b2a4bf93f8
+    buildTimeAssetPath: Assets/Imported/_GhoulZombie/Ghoul@Animations.fbx
+  - fileID: 382
+    classID: 43
+    packedSize: 12684
+    offset: 332630512
+    sourceAssetGUID: fb7efee7281a1894eb65a3dec17b073e
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Bottles/Flask07.FBX
+  - fileID: 383
+    classID: 43
+    packedSize: 30480
+    offset: 332643200
+    sourceAssetGUID: 0eff981a16f2c8440a3fcd9c00b5e402
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Models/mushroom_pointy.fbx
+  - fileID: 384
+    classID: 43
+    packedSize: 12432
+    offset: 332673680
+    sourceAssetGUID: 8f28708aab45e9c48a951b5c627f55cd
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Bottles/Jar.FBX
+  - fileID: 385
+    classID: 43
+    packedSize: 109880
+    offset: 332686112
+    sourceAssetGUID: bf1b95fba89fb2e438e098ef4361e389
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.FBX
+  - fileID: 386
+    classID: 43
+    packedSize: 41532
+    offset: 332795992
+    sourceAssetGUID: 0eff981a16f2c8440a3fcd9c00b5e402
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Models/mushroom_pointy.fbx
+  - fileID: 387
+    classID: 43
+    packedSize: 15948
+    offset: 332837528
+    sourceAssetGUID: 8f28708aab45e9c48a951b5c627f55cd
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Models/Items/Bottles/Jar.FBX
+  - fileID: 388
+    classID: 43
+    packedSize: 70564
+    offset: 332853480
+    sourceAssetGUID: bf1b95fba89fb2e438e098ef4361e389
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.FBX
+  - fileID: 389
+    classID: 43
+    packedSize: 109880
+    offset: 332924048
+    sourceAssetGUID: bf1b95fba89fb2e438e098ef4361e389
+    buildTimeAssetPath: Assets/Imported/Butterfly (Animated)/FBX/butterfly.FBX
+  - fileID: 390
+    classID: 43
+    packedSize: 4012
+    offset: 333033928
+    sourceAssetGUID: 0cf196e1f019827448ce5ec7a627acb0
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      5/Chew Chute 2.fbx
+  - fileID: 391
+    classID: 43
+    packedSize: 5496
+    offset: 333037944
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 392
+    classID: 43
+    packedSize: 5496
+    offset: 333043440
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 393
+    classID: 43
+    packedSize: 373696
+    offset: 333048936
+    sourceAssetGUID: dcdc8cc31ad08854c82caf9c0bf68465
+    buildTimeAssetPath: Assets/Imported/PlantChallenge_cut.fbx
+  - fileID: 394
+    classID: 43
+    packedSize: 5496
+    offset: 333422632
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 395
+    classID: 43
+    packedSize: 5496
+    offset: 333428128
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 396
+    classID: 43
+    packedSize: 5496
+    offset: 333433624
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 397
+    classID: 43
+    packedSize: 5496
+    offset: 333439120
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 398
+    classID: 43
+    packedSize: 5496
+    offset: 333444616
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 399
+    classID: 43
+    packedSize: 5496
+    offset: 333450112
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 400
+    classID: 43
+    packedSize: 1768
+    offset: 333455608
+    sourceAssetGUID: b4b793d516af94f43bfa659d6debac51
+    buildTimeAssetPath: Assets/Imported/window.obj
+  - fileID: 401
+    classID: 43
+    packedSize: 5496
+    offset: 333457376
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 402
+    classID: 43
+    packedSize: 4012
+    offset: 333462872
+    sourceAssetGUID: 80d2097d9ea4a5048a2ba5f921fc1172
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      5/Chew Chute 1.fbx
+  - fileID: 403
+    classID: 43
+    packedSize: 5496
+    offset: 333466888
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 404
+    classID: 43
+    packedSize: 493324
+    offset: 333472384
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 405
+    classID: 43
+    packedSize: 5496
+    offset: 333965712
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 406
+    classID: 43
+    packedSize: 5496
+    offset: 333971208
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 407
+    classID: 43
+    packedSize: 186892
+    offset: 333976704
+    sourceAssetGUID: 3568cfec1d0887842a60a594eac7ea7b
+    buildTimeAssetPath: Assets/Imported/moonlight ash tree.fbx
+  - fileID: 408
+    classID: 43
+    packedSize: 24636
+    offset: 334163600
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 409
+    classID: 43
+    packedSize: 104700
+    offset: 334188240
+    sourceAssetGUID: b4b793d516af94f43bfa659d6debac51
+    buildTimeAssetPath: Assets/Imported/window.obj
+  - fileID: 410
+    classID: 43
+    packedSize: 5496
+    offset: 334292944
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 411
+    classID: 43
+    packedSize: 20384
+    offset: 334298440
+    sourceAssetGUID: dcdc8cc31ad08854c82caf9c0bf68465
+    buildTimeAssetPath: Assets/Imported/PlantChallenge_cut.fbx
+  - fileID: 412
+    classID: 43
+    packedSize: 5496
+    offset: 334318824
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 413
+    classID: 43
+    packedSize: 10816
+    offset: 334324320
+    sourceAssetGUID: 8d9a680c8d8b14a44a2ac4fede1acb6a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      9/Padder Pod 3.fbx
+  - fileID: 414
+    classID: 43
+    packedSize: 5496
+    offset: 334335136
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 415
+    classID: 43
+    packedSize: 5496
+    offset: 334340632
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 416
+    classID: 43
+    packedSize: 5496
+    offset: 334346128
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 417
+    classID: 43
+    packedSize: 5496
+    offset: 334351624
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 418
+    classID: 43
+    packedSize: 5496
+    offset: 334357120
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 419
+    classID: 43
+    packedSize: 5496
+    offset: 334362616
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 420
+    classID: 43
+    packedSize: 886604
+    offset: 334368112
+    sourceAssetGUID: 2c1f6a9cf2930944dbd9093bb72c9beb
+    buildTimeAssetPath: Assets/Imported/greenhouse_outside_skech2.fbx
+  - fileID: 421
+    classID: 43
+    packedSize: 31204
+    offset: 335254720
+    sourceAssetGUID: 340ed05db7df7f84aaba90c83e875370
+    buildTimeAssetPath: Assets/Imported/jar.fbx
+  - fileID: 422
+    classID: 43
+    packedSize: 887948
+    offset: 335285928
+    sourceAssetGUID: 3913bab00ae7d4e43866a103698ebf00
+    buildTimeAssetPath: Assets/Imported/greenhouse_outside_skech2_flipped_v4.fbx
+  - fileID: 423
+    classID: 43
+    packedSize: 2904
+    offset: 336173880
+    sourceAssetGUID: 4a8c064de5d1b4045a9e9d4ebd5d6575
+    buildTimeAssetPath: Assets/Imported/Hovl Studio 2/Magic effects pack/Models/Cylinder.fbx
+  - fileID: 424
+    classID: 43
+    packedSize: 9420
+    offset: 336176784
+    sourceAssetGUID: ce053b72ed21b9a4ca447395dfc41504
+    buildTimeAssetPath: Assets/Imported/pool ring.fbx
+  - fileID: 425
+    classID: 43
+    packedSize: 5496
+    offset: 336186208
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 426
+    classID: 43
+    packedSize: 5496
+    offset: 336191704
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 427
+    classID: 43
+    packedSize: 30048
+    offset: 336197200
+    sourceAssetGUID: 3c8e48d06db55be4c9289dc7f11f3c46
+    buildTimeAssetPath: Assets/Imported/lp_planter-v3.fbx
+  - fileID: 428
+    classID: 43
+    packedSize: 5496
+    offset: 336227248
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 429
+    classID: 43
+    packedSize: 5496
+    offset: 336232744
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 430
+    classID: 43
+    packedSize: 5496
+    offset: 336238240
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 431
+    classID: 43
+    packedSize: 6736
+    offset: 336243736
+    sourceAssetGUID: a9cb716b7f47e264e87a3eca26b7afd8
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      10/Hag Root 4.fbx
+  - fileID: 432
+    classID: 43
+    packedSize: 5496
+    offset: 336250472
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 433
+    classID: 43
+    packedSize: 5496
+    offset: 336255968
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 434
+    classID: 43
+    packedSize: 5496
+    offset: 336261464
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 435
+    classID: 43
+    packedSize: 5496
+    offset: 336266960
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 436
+    classID: 43
+    packedSize: 5496
+    offset: 336272456
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 437
+    classID: 43
+    packedSize: 4012
+    offset: 336277952
+    sourceAssetGUID: 47e6cd9a31d66364ca6594a6b5ec25c9
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      5/Chew Chute 3.fbx
+  - fileID: 438
+    classID: 43
+    packedSize: 5496
+    offset: 336281968
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 439
+    classID: 43
+    packedSize: 5496
+    offset: 336287464
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 440
+    classID: 43
+    packedSize: 5496
+    offset: 336292960
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 441
+    classID: 43
+    packedSize: 5496
+    offset: 336298456
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 442
+    classID: 43
+    packedSize: 4652
+    offset: 336303952
+    sourceAssetGUID: fecb49ddb8418114dadaf6f566fc3e65
+    buildTimeAssetPath: Assets/Imported/Cobwebs Pack/Model/SM_Cobwebs_05.fbx
+  - fileID: 443
+    classID: 43
+    packedSize: 43836
+    offset: 336308608
+    sourceAssetGUID: f727a4f442e55044ea6bc8d6b9e6c28f
+    buildTimeAssetPath: Assets/Imported/nimbus willow tree.fbx
+  - fileID: 444
+    classID: 43
+    packedSize: 5496
+    offset: 336352448
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 445
+    classID: 43
+    packedSize: 5496
+    offset: 336357944
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 446
+    classID: 43
+    packedSize: 701728
+    offset: 336363440
+    sourceAssetGUID: 6406bb07c80ba9a4ca62b4091495fdc1
+    buildTimeAssetPath: Assets/Imported/clam merged.fbx
+  - fileID: 447
+    classID: 43
+    packedSize: 15872
+    offset: 337065168
+    sourceAssetGUID: 758669578727f7445a76f0c3ce92dca3
+    buildTimeAssetPath: Assets/Imported/finger.fbx
+  - fileID: 448
+    classID: 43
+    packedSize: 24636
+    offset: 337081040
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 449
+    classID: 43
+    packedSize: 5496
+    offset: 337105680
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 450
+    classID: 43
+    packedSize: 19664
+    offset: 337111176
+    sourceAssetGUID: 6406bb07c80ba9a4ca62b4091495fdc1
+    buildTimeAssetPath: Assets/Imported/clam merged.fbx
+  - fileID: 451
+    classID: 43
+    packedSize: 5496
+    offset: 337130840
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 452
+    classID: 43
+    packedSize: 17032
+    offset: 337136336
+    sourceAssetGUID: 3568cfec1d0887842a60a594eac7ea7b
+    buildTimeAssetPath: Assets/Imported/moonlight ash tree.fbx
+  - fileID: 453
+    classID: 43
+    packedSize: 5496
+    offset: 337153368
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 454
+    classID: 43
+    packedSize: 5496
+    offset: 337158864
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 455
+    classID: 43
+    packedSize: 5496
+    offset: 337164360
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 456
+    classID: 43
+    packedSize: 13864
+    offset: 337169856
+    sourceAssetGUID: f56e2c347cbf7084a947f9d0d97c483e
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      9/Basin Bush No Underbush.fbx
+  - fileID: 457
+    classID: 43
+    packedSize: 196128
+    offset: 337183720
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 458
+    classID: 43
+    packedSize: 14008
+    offset: 337379848
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 459
+    classID: 43
+    packedSize: 2864
+    offset: 337393856
+    sourceAssetGUID: 9b077db4ed4ab9b4aa193de9c4efa04e
+    buildTimeAssetPath: Assets/Imported/Cobwebs Pack/Model/SM_Cobwebs_06.fbx
+  - fileID: 460
+    classID: 43
+    packedSize: 5496
+    offset: 337396720
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 461
+    classID: 43
+    packedSize: 5496
+    offset: 337402216
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 462
+    classID: 43
+    packedSize: 5496
+    offset: 337407712
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 463
+    classID: 43
+    packedSize: 377744
+    offset: 337413208
+    sourceAssetGUID: a1be285c9ed5c26469cdc38ac6c86948
+    buildTimeAssetPath: Assets/Imported/Flower_cut.fbx
+  - fileID: 464
+    classID: 43
+    packedSize: 5496
+    offset: 337790952
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 465
+    classID: 43
+    packedSize: 5496
+    offset: 337796448
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 466
+    classID: 43
+    packedSize: 5496
+    offset: 337801944
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 467
+    classID: 43
+    packedSize: 5496
+    offset: 337807440
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 468
+    classID: 43
+    packedSize: 63596
+    offset: 337812936
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 469
+    classID: 43
+    packedSize: 5496
+    offset: 337876536
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 470
+    classID: 43
+    packedSize: 14008
+    offset: 337882032
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 471
+    classID: 43
+    packedSize: 5496
+    offset: 337896040
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 472
+    classID: 43
+    packedSize: 5496
+    offset: 337901536
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 473
+    classID: 43
+    packedSize: 5496
+    offset: 337907032
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 474
+    classID: 43
+    packedSize: 5496
+    offset: 337912528
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 475
+    classID: 43
+    packedSize: 5496
+    offset: 337918024
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 476
+    classID: 43
+    packedSize: 5496
+    offset: 337923520
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 477
+    classID: 43
+    packedSize: 5496
+    offset: 337929016
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 478
+    classID: 43
+    packedSize: 5496
+    offset: 337934512
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 479
+    classID: 43
+    packedSize: 2440
+    offset: 337940008
+    sourceAssetGUID: 251a90362c70647468ad717dfd1ac9c4
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Backless.fbx
+  - fileID: 480
+    classID: 43
+    packedSize: 63596
+    offset: 337942448
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 481
+    classID: 43
+    packedSize: 5496
+    offset: 338006048
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 482
+    classID: 43
+    packedSize: 5496
+    offset: 338011544
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 483
+    classID: 43
+    packedSize: 5496
+    offset: 338017040
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 484
+    classID: 43
+    packedSize: 5496
+    offset: 338022536
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 485
+    classID: 43
+    packedSize: 130652
+    offset: 338028032
+    sourceAssetGUID: 0b66323d064a81f4b91d4b1d489317b3
+    buildTimeAssetPath: Assets/Imported/avatar flower_wlights.fbx
+  - fileID: 486
+    classID: 43
+    packedSize: 5496
+    offset: 338158688
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 487
+    classID: 43
+    packedSize: 5496
+    offset: 338164184
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 488
+    classID: 43
+    packedSize: 5496
+    offset: 338169680
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 489
+    classID: 43
+    packedSize: 5496
+    offset: 338175176
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 490
+    classID: 43
+    packedSize: 3116
+    offset: 338180672
+    sourceAssetGUID: cadaa081cdcb1fb4ebf5f784cbf46e82
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Extender.fbx
+  - fileID: 491
+    classID: 43
+    packedSize: 6628
+    offset: 338183792
+    sourceAssetGUID: a7878d6044f97f54190304258f5bef4a
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      10/Hag Root 3.fbx
+  - fileID: 492
+    classID: 43
+    packedSize: 5496
+    offset: 338190424
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 493
+    classID: 43
+    packedSize: 5496
+    offset: 338195920
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 494
+    classID: 43
+    packedSize: 5496
+    offset: 338201416
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 495
+    classID: 43
+    packedSize: 5496
+    offset: 338206912
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 496
+    classID: 43
+    packedSize: 5496
+    offset: 338212408
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 497
+    classID: 43
+    packedSize: 5496
+    offset: 338217904
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 498
+    classID: 43
+    packedSize: 5496
+    offset: 338223400
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 499
+    classID: 43
+    packedSize: 176140
+    offset: 338228896
+    sourceAssetGUID: de87f5014060d744cb69fc337b36caf9
+    buildTimeAssetPath: Assets/Imported/Verona_PO.fbx
+  - fileID: 500
+    classID: 43
+    packedSize: 5496
+    offset: 338405040
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 501
+    classID: 43
+    packedSize: 3604
+    offset: 338410536
+    sourceAssetGUID: 8e1401e34d57804488bb41f0ec421bd9
+    buildTimeAssetPath: Assets/Imported/Cobwebs Pack/Model/SM_Cobwebs_09.fbx
+  - fileID: 502
+    classID: 43
+    packedSize: 7864
+    offset: 338414144
+    sourceAssetGUID: ed30c20b153a3874f9969fca5728f44b
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Wall.fbx
+  - fileID: 503
+    classID: 43
+    packedSize: 5496
+    offset: 338422008
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 504
+    classID: 43
+    packedSize: 5496
+    offset: 338427504
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 505
+    classID: 43
+    packedSize: 3388
+    offset: 338433000
+    sourceAssetGUID: 0681239629d0a6b488d0fe29d12c6537
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine Ledge.fbx
+  - fileID: 506
+    classID: 43
+    packedSize: 13120
+    offset: 338436392
+    sourceAssetGUID: 0a73716ae73e9a4468c96965d55b0bb2
+    buildTimeAssetPath: Assets/Imported/Mugs, Bowls and Plates/Models/bowl01.fbx
+  - fileID: 507
+    classID: 43
+    packedSize: 5496
+    offset: 338449512
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 508
+    classID: 43
+    packedSize: 5496
+    offset: 338455008
+    sourceAssetGUID: 5a2d9f40568677f4aa6c458445a811ec
+    buildTimeAssetPath: Assets/Imported/Books_Pile.obj
+  - fileID: 509
+    classID: 43
+    packedSize: 4440
+    offset: 338460504
+    sourceAssetGUID: 8f44685192312d646a6ca4626a25f1bc
+    buildTimeAssetPath: Assets/Imported/Splash of Color Plants/Hi Res Mesh/Brush
+      4/Hanging Luna Vine.fbx
+  - fileID: 510
+    classID: 48
+    packedSize: 22336
+    offset: 338464944
+    sourceAssetGUID: 1581eccce46ba384596a1dce7936ab19
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR
+      Particle Procedural Ring.cfxrshader
+  - fileID: 511
+    classID: 48
+    packedSize: 32988
+    offset: 338487280
+    sourceAssetGUID: 1a29b4d27eb8b04479ef89c00dea533d
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR
+      Particle Ubershader.cfxrshader
+  - fileID: 512
+    classID: 48
+    packedSize: 17568
+    offset: 338520272
+    sourceAssetGUID: 67dfcda17071f4a41be79c4049965e67
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR
+      Particle Glow.cfxrshader
+  - fileID: 513
+    classID: 48
+    packedSize: 40412
+    offset: 338537840
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 514
+    classID: 48
+    packedSize: 39964
+    offset: 338578256
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 515
+    classID: 48
+    packedSize: 22680
+    offset: 338618224
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 516
+    classID: 48
+    packedSize: 36772
+    offset: 338640904
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 517
+    classID: 48
+    packedSize: 261952
+    offset: 338677680
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 518
+    classID: 48
+    packedSize: 666952
+    offset: 338939632
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 519
+    classID: 48
+    packedSize: 146068
+    offset: 339606584
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 520
+    classID: 48
+    packedSize: 4948
+    offset: 339752656
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 521
+    classID: 48
+    packedSize: 33112
+    offset: 339757608
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 522
+    classID: 48
+    packedSize: 43848
+    offset: 339790720
+    sourceAssetGUID: 112d9d617c18b154393ad8e4b23a6ade
+    buildTimeAssetPath: Assets/Imported/Mushroom Forest/Shaders/Normal-BumpSpecRim.shader
+  - fileID: 523
+    classID: 48
+    packedSize: 22148
+    offset: 339834568
+    sourceAssetGUID: 1d4a9c916d62a324e90c32798caf3f13
+    buildTimeAssetPath: Assets/Imported/Hovl Studio/Procedural fire/Shaders/FireSphere.shader
+  - fileID: 524
+    classID: 48
+    packedSize: 46824
+    offset: 339856720
+    sourceAssetGUID: 2804f7b141b729843a63342bb87c753d
+    buildTimeAssetPath: Assets/Imported/BK_AlchemistHouse/Resources/Shaders/Refraction.shader
+  - fileID: 525
+    classID: 74
+    packedSize: 2244
+    offset: 339903544
+    sourceAssetGUID: d7373f30a4b755d45827ddd9cdbe39cd
+    buildTimeAssetPath: Assets/Scripts/New Animation.anim
+  - fileID: 526
+    classID: 74
+    packedSize: 2568
+    offset: 339905792
+    sourceAssetGUID: 55eae1535bbaca34d8888501a5fa496e
+    buildTimeAssetPath: Assets/animation/blue orb.anim
+  - fileID: 527
+    classID: 74
+    packedSize: 2736
+    offset: 339908360
+    sourceAssetGUID: 29d73ec2eacf40f46ab5c627170639ed
+    buildTimeAssetPath: Assets/animation/clam close.anim
+  - fileID: 528
+    classID: 74
+    packedSize: 2380
+    offset: 339911096
+    sourceAssetGUID: 1b0682844847f00438b119a8711e2c82
+    buildTimeAssetPath: Assets/animation/clam open idle.anim
+  - fileID: 529
+    classID: 74
+    packedSize: 2736
+    offset: 339913480
+    sourceAssetGUID: 4fc2e6649753fad48b2e9a0b3a4f8046
+    buildTimeAssetPath: Assets/animation/clam open.anim
+  - fileID: 530
+    classID: 74
+    packedSize: 2572
+    offset: 339916216
+    sourceAssetGUID: 1e7354d61b984854db4d7b6eba189f9e
+    buildTimeAssetPath: Assets/animation/green orb.anim
+  - fileID: 531
+    classID: 74
+    packedSize: 2568
+    offset: 339918792
+    sourceAssetGUID: ef22efa3650a4ff4d90bb589130569fd
+    buildTimeAssetPath: Assets/animation/red orb.anim
+  - fileID: 532
+    classID: 74
+    packedSize: 64864
+    offset: 339921360
+    sourceAssetGUID: ce65fa103f0e84b4289374b2a4bf93f8
+    buildTimeAssetPath: Assets/Imported/_GhoulZombie/Ghoul@Animations.fbx
+  - fileID: 533
+    classID: 83
+    packedSize: 164
+    offset: 339986224
+    sourceAssetGUID: 0ef463d3c59e8a449821c0a591cc651c
+    buildTimeAssetPath: Assets/Sound Effects/whoosh-blow-flutter-shortwav-14678.mp3
+  - fileID: 534
+    classID: 83
+    packedSize: 144
+    offset: 339986392
+    sourceAssetGUID: 2ae9fd00133dd5940b867497c892a81c
+    buildTimeAssetPath: Assets/Sound Effects/magic circle sfx.mp3
+  - fileID: 535
+    classID: 83
+    packedSize: 156
+    offset: 339986536
+    sourceAssetGUID: 3e57d7da8f0d64549a905e45eea646b9
+    buildTimeAssetPath: Assets/Sound Effects/horrific-zombie-growl-107090.mp3
+  - fileID: 536
+    classID: 83
+    packedSize: 176
+    offset: 339986696
+    sourceAssetGUID: 4e837579d90ff204ca23c43a29917fed
+    buildTimeAssetPath: Assets/melancholic music for reading and writing crime.mp3
+  - fileID: 537
+    classID: 83
+    packedSize: 148
+    offset: 339986872
+    sourceAssetGUID: 76ae2a230ecddf646b402c547fb526a0
+    buildTimeAssetPath: Assets/Sound Effects/hq-explosion-6288.mp3
+  - fileID: 538
+    classID: 83
+    packedSize: 148
+    offset: 339987024
+    sourceAssetGUID: 90f2b6fa2b90b7b419eefd2da7849e7b
+    buildTimeAssetPath: Assets/Sound Effects/item slot sparkle.mp3
+  - fileID: 539
+    classID: 83
+    packedSize: 148
+    offset: 339987176
+    sourceAssetGUID: a2f662c2e95d51644a4c8216a8264e0f
+    buildTimeAssetPath: Assets/Sound Effects/butterfly sparkle.mp3
+  - fileID: 540
+    classID: 83
+    packedSize: 148
+    offset: 339987328
+    sourceAssetGUID: c1e01163f49cd384aaae5376bb09b60f
+    buildTimeAssetPath: Assets/Sound Effects/zombie-sound-357975.mp3
+  - fileID: 541
+    classID: 89
+    packedSize: 524656
+    offset: 339987480
+    sourceAssetGUID: 354036e57ae357148aed267204ce73a7
+    buildTimeAssetPath: Assets/Imported/SkySeries Freebie/FreebieHdri/CoriolisNight4k.hdr
+  - fileID: 542
+    classID: 91
+    packedSize: 424
+    offset: 340512136
+    sourceAssetGUID: c70b0b50e2a91cd429a45dc1e0f21f75
+    buildTimeAssetPath: Assets/Scripts/Pearl.controller
+  - fileID: 543
+    classID: 91
+    packedSize: 1304
+    offset: 340512560
+    sourceAssetGUID: 13f2fa11c5c7bd2449489d41c1829e31
+    buildTimeAssetPath: Assets/animation/Clam.controller
+  - fileID: 544
+    classID: 91
+    packedSize: 408
+    offset: 340513864
+    sourceAssetGUID: 6003db15ae646b945a59daaca384b3c3
+    buildTimeAssetPath: Assets/animation/Sphere (5).controller
+  - fileID: 545
+    classID: 91
+    packedSize: 416
+    offset: 340514272
+    sourceAssetGUID: 80996e6195aaa1442ac38736b3033a30
+    buildTimeAssetPath: Assets/animation/Sphere (6).controller
+  - fileID: 546
+    classID: 91
+    packedSize: 420
+    offset: 340514688
+    sourceAssetGUID: 1b8d2773f7505414a8d0b0e74fc9c709
+    buildTimeAssetPath: Assets/animation/Sphere (7).controller
+  - fileID: 547
+    classID: 91
+    packedSize: 412
+    offset: 340515112
+    sourceAssetGUID: ab38cc6796951244f8037611cb20a1ff
+    buildTimeAssetPath: Assets/animation/zombie.controller
+  - fileID: 548
+    classID: 115
+    packedSize: 96
+    offset: 292448
+    sourceAssetGUID: 4ecd63eff847044b68db9453ce219299
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Editor.dll
+  - fileID: 549
+    classID: 115
+    packedSize: 108
+    offset: 292544
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 550
+    classID: 115
+    packedSize: 92
+    offset: 292656
+    sourceAssetGUID: 0cd44c1031e13a943bb63640046fad76
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs
+  - fileID: 551
+    classID: 115
+    packedSize: 84
+    offset: 292752
+    sourceAssetGUID: 1344c3c82d62a2a41a3576d8abb8e3ea
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs
+  - fileID: 552
+    classID: 115
+    packedSize: 84
+    offset: 292840
+    sourceAssetGUID: 45115577ef41a5b4ca741ed302693907
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/UdonBehaviour.cs
+  - fileID: 553
+    classID: 115
+    packedSize: 124
+    offset: 292928
+    sourceAssetGUID: 4f231c4fb786f3946a6b90b886c48677
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+  - fileID: 554
+    classID: 115
+    packedSize: 100
+    offset: 293056
+    sourceAssetGUID: 76c392e42b5098c458856cdf6ecaaaa1
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs
+  - fileID: 555
+    classID: 115
+    packedSize: 84
+    offset: 293160
+    sourceAssetGUID: 9205bc1bbacc90040a998067b5643d16
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.cs
+  - fileID: 556
+    classID: 115
+    packedSize: 124
+    offset: 293248
+    sourceAssetGUID: bf61d954ecb803046953c666facfb904
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/SerializedUdonProgramAsset.cs
+  - fileID: 557
+    classID: 115
+    packedSize: 100
+    offset: 293376
+    sourceAssetGUID: dc42784cf147c0c48a680349fa168899
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs
+  - fileID: 558
+    classID: 115
+    packedSize: 92
+    offset: 293480
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 559
+    classID: 1
+    packedSize: 67
+    offset: 340515528
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 560
+    classID: 1
+    packedSize: 59
+    offset: 340515600
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 561
+    classID: 1
+    packedSize: 51
+    offset: 340515664
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 562
+    classID: 1
+    packedSize: 99
+    offset: 340515720
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 563
+    classID: 1
+    packedSize: 59
+    offset: 340515824
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 564
+    classID: 1
+    packedSize: 63
+    offset: 340515888
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 565
+    classID: 1
+    packedSize: 63
+    offset: 340515952
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 566
+    classID: 1
+    packedSize: 63
+    offset: 340516016
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 567
+    classID: 1
+    packedSize: 59
+    offset: 340516080
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 568
+    classID: 1
+    packedSize: 55
+    offset: 340516144
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 569
+    classID: 1
+    packedSize: 51
+    offset: 340516200
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 570
+    classID: 1
+    packedSize: 111
+    offset: 340516256
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 571
+    classID: 1
+    packedSize: 59
+    offset: 340516368
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 572
+    classID: 1
+    packedSize: 55
+    offset: 340516432
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 573
+    classID: 1
+    packedSize: 67
+    offset: 340516488
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 574
+    classID: 1
+    packedSize: 51
+    offset: 340516560
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 575
+    classID: 1
+    packedSize: 87
+    offset: 340516616
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 576
+    classID: 1
+    packedSize: 55
+    offset: 340516704
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 577
+    classID: 1
+    packedSize: 59
+    offset: 340516760
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 578
+    classID: 1
+    packedSize: 51
+    offset: 340516824
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 579
+    classID: 1
+    packedSize: 87
+    offset: 340516880
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 580
+    classID: 4
+    packedSize: 68
+    offset: 340516968
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 581
+    classID: 4
+    packedSize: 68
+    offset: 340517040
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 582
+    classID: 4
+    packedSize: 116
+    offset: 340517112
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 583
+    classID: 4
+    packedSize: 68
+    offset: 340517232
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 584
+    classID: 4
+    packedSize: 68
+    offset: 340517304
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 585
+    classID: 4
+    packedSize: 68
+    offset: 340517376
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 586
+    classID: 4
+    packedSize: 68
+    offset: 340517448
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 587
+    classID: 4
+    packedSize: 68
+    offset: 340517520
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 588
+    classID: 4
+    packedSize: 68
+    offset: 340517592
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 589
+    classID: 4
+    packedSize: 68
+    offset: 340517664
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 590
+    classID: 4
+    packedSize: 68
+    offset: 340517736
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 591
+    classID: 4
+    packedSize: 116
+    offset: 340517808
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 592
+    classID: 4
+    packedSize: 68
+    offset: 340517928
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 593
+    classID: 4
+    packedSize: 68
+    offset: 340518000
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 594
+    classID: 4
+    packedSize: 68
+    offset: 340518072
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 595
+    classID: 4
+    packedSize: 68
+    offset: 340518144
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 596
+    classID: 4
+    packedSize: 128
+    offset: 340518216
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 597
+    classID: 4
+    packedSize: 68
+    offset: 340518344
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 598
+    classID: 4
+    packedSize: 68
+    offset: 340518416
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 599
+    classID: 4
+    packedSize: 68
+    offset: 340518488
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 600
+    classID: 4
+    packedSize: 116
+    offset: 340518560
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 601
+    classID: 82
+    packedSize: 288
+    offset: 340518680
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 602
+    classID: 108
+    packedSize: 264
+    offset: 340518968
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 603
+    classID: 108
+    packedSize: 264
+    offset: 340519232
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 604
+    classID: 108
+    packedSize: 264
+    offset: 340519496
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 605
+    classID: 108
+    packedSize: 264
+    offset: 340519760
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 606
+    classID: 198
+    packedSize: 7616
+    offset: 340520024
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 607
+    classID: 198
+    packedSize: 7560
+    offset: 340527640
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 608
+    classID: 198
+    packedSize: 7392
+    offset: 340535200
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 609
+    classID: 198
+    packedSize: 7392
+    offset: 340542592
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 610
+    classID: 198
+    packedSize: 7560
+    offset: 340549984
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 611
+    classID: 198
+    packedSize: 7500
+    offset: 340557544
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 612
+    classID: 198
+    packedSize: 7500
+    offset: 340565048
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 613
+    classID: 198
+    packedSize: 7560
+    offset: 340572552
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 614
+    classID: 198
+    packedSize: 7620
+    offset: 340580112
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 615
+    classID: 198
+    packedSize: 7560
+    offset: 340587736
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 616
+    classID: 198
+    packedSize: 7448
+    offset: 340595296
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 617
+    classID: 198
+    packedSize: 7504
+    offset: 340602744
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 618
+    classID: 198
+    packedSize: 7892
+    offset: 340610248
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 619
+    classID: 198
+    packedSize: 7560
+    offset: 340618144
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 620
+    classID: 198
+    packedSize: 7448
+    offset: 340625704
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 621
+    classID: 198
+    packedSize: 7668
+    offset: 340633152
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 622
+    classID: 198
+    packedSize: 7676
+    offset: 340640824
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 623
+    classID: 199
+    packedSize: 312
+    offset: 340648504
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 624
+    classID: 199
+    packedSize: 312
+    offset: 340648816
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 625
+    classID: 199
+    packedSize: 312
+    offset: 340649128
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 626
+    classID: 199
+    packedSize: 312
+    offset: 340649440
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 627
+    classID: 199
+    packedSize: 308
+    offset: 340649752
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 628
+    classID: 199
+    packedSize: 300
+    offset: 340650064
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 629
+    classID: 199
+    packedSize: 300
+    offset: 340650368
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 630
+    classID: 199
+    packedSize: 296
+    offset: 340650672
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 631
+    classID: 199
+    packedSize: 308
+    offset: 340650968
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 632
+    classID: 199
+    packedSize: 312
+    offset: 340651280
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 633
+    classID: 199
+    packedSize: 312
+    offset: 340651592
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 634
+    classID: 199
+    packedSize: 312
+    offset: 340651904
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 635
+    classID: 199
+    packedSize: 312
+    offset: 340652216
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 636
+    classID: 199
+    packedSize: 308
+    offset: 340652528
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 637
+    classID: 199
+    packedSize: 300
+    offset: 340652840
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 638
+    classID: 199
+    packedSize: 312
+    offset: 340653144
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 639
+    classID: 199
+    packedSize: 308
+    offset: 340653456
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+  - fileID: 640
+    classID: 114
+    packedSize: 4304
+    offset: 340653768
+    sourceAssetGUID: cc27992bd48dde2408ae6059a197f308
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/0b6db0c1aa2c631448e5b1de6abf84a0.asset
+  - fileID: 641
+    classID: 114
+    packedSize: 2020
+    offset: 340658072
+    sourceAssetGUID: 9b5f6faa8816aab4a95fa7b33ca7eb8a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/0d331f6773a0de546a0bbbbe7c7bad61.asset
+  - fileID: 642
+    classID: 114
+    packedSize: 1492
+    offset: 340660096
+    sourceAssetGUID: 68a240469045d534ba0218e71afa54bf
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/3268a6efd204bd244b3659473a44c0ce.asset
+  - fileID: 643
+    classID: 114
+    packedSize: 2996
+    offset: 340661592
+    sourceAssetGUID: 7f802303a953ee3438be03f039a5d203
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/536d0abc79a9f8647b8b0faef5391b09.asset
+  - fileID: 644
+    classID: 114
+    packedSize: 2896
+    offset: 340664592
+    sourceAssetGUID: 65c6cd7812d85714083ef82fe158d06b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/566cc00e27d5822449529a3785eae366.asset
+  - fileID: 645
+    classID: 114
+    packedSize: 3576
+    offset: 340667488
+    sourceAssetGUID: 9f8e34cd075cc8e4aa5a7a1d742dcd11
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5ac707dae5d02c944b0a18fd6f378afd.asset
+  - fileID: 646
+    classID: 114
+    packedSize: 5104
+    offset: 340671064
+    sourceAssetGUID: 48c7b043a272cfe4f8c5c10a49e4c8f9
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5e647e49f73248649b9d698cc95e2d33.asset
+  - fileID: 647
+    classID: 114
+    packedSize: 2036
+    offset: 340676168
+    sourceAssetGUID: a96ff808e43f3a34ea38bfc9d1560985
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/65751430840f8384eb9769c79eb0293c.asset
+  - fileID: 648
+    classID: 114
+    packedSize: 4492
+    offset: 340678208
+    sourceAssetGUID: 5231635ba518a7248ad15ec803f3de5f
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/6d15d13cee4a32144ae91cd51293a37d.asset
+  - fileID: 649
+    classID: 114
+    packedSize: 1932
+    offset: 340682704
+    sourceAssetGUID: 6735f2da47a0e794ea0672b2428c8194
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/73526b0003d5a7542b1edf8b335a6b29.asset
+  - fileID: 650
+    classID: 114
+    packedSize: 3048
+    offset: 340684640
+    sourceAssetGUID: 62f3279cd4a845846b25c1dff95b66f6
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8628c5d444d4d724c9f45843e4921806.asset
+  - fileID: 651
+    classID: 114
+    packedSize: 5672
+    offset: 340687688
+    sourceAssetGUID: 7b8e79e24dded0043a293294b02fd366
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/95ab09f90e87c1748884e4329ea6fda2.asset
+  - fileID: 652
+    classID: 114
+    packedSize: 10820
+    offset: 340693360
+    sourceAssetGUID: 989ded48fd4a1744b9303867a510ca66
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/b6aefbd9119a0eb478e6ed539ac746df.asset
+  - fileID: 653
+    classID: 114
+    packedSize: 2484
+    offset: 340704184
+    sourceAssetGUID: 9dff74d879402484d8c63d0460c44b2c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/b863356b3ba192b4b87d62046a40f4f0.asset
+  - fileID: 654
+    classID: 114
+    packedSize: 1716
+    offset: 340706672
+    sourceAssetGUID: 781bd9265e727db48800c0734cbd7113
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
+  - fileID: 655
+    classID: 114
+    packedSize: 2284
+    offset: 340708392
+    sourceAssetGUID: 58b677ec4e4c5754c98d4cde659ee6ef
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ef3b923cb657bf24dab4cfb5c6a03103.asset
+  - fileID: 656
+    classID: 114
+    packedSize: 1824
+    offset: 340710680
+    sourceAssetGUID: 9e235473771078440a84b3cdab008276
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/fd2ef9d3294ffc846894efb5d949fbc9.asset
+  - fileID: 657
+    classID: 114
+    packedSize: 612
+    offset: 340712504
+    sourceAssetGUID: 4bda94453d2ca7444a0fff05b2d425f5
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR
+      Explosion Smoke 2 Solo (HDR).prefab
+  - fileID: 658
+    classID: 114
+    packedSize: 640
+    offset: 340713120
+    sourceAssetGUID: 0b23e47cd30d0914591cbf013c701acc
+    buildTimeAssetPath: Assets/CFXR3 Magic Aura A (Runic) Variant.prefab
+  - fileID: 659
+    classID: 114
+    packedSize: 640
+    offset: 340713760
+    sourceAssetGUID: 6f34ef0d986e9db4199cf75805f79753
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3
+      Hit Ice B (Air).prefab
+  - fileID: 660
+    classID: 114
+    packedSize: 640
+    offset: 340714400
+    sourceAssetGUID: bbf9e36a48d6c5648a13889afab076fd
+    buildTimeAssetPath: Assets/Imported/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3
+      Hit Light B (Air).prefab
+--- !u!668709126 &-3124837450247082540
+BuiltAssetBundleInfoSet:
+  bundleInfos:
+  - bundleName: scene-standalonewindows64-world scene.vrcw
+    bundleArchiveFile: 3
+    packagedFileIndices: 000000000100000002000000
+--- !u!1125 &1
+BuildReport:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LastWindowsBuild
+  m_Summary:
+    buildStartTime:
+      serializedVersion: 2
+      ticks: 638889720029683078
+    buildGUID: 00000000000000000000000000000000
+    platformName: Win64
+    platformGroupName: Standalone
+    subtarget: 0
+    options: 0
+    assetBundleOptions: 32
+    outputPath: C:/Users/mitss/AppData/Local/Temp/DefaultCompany/Shotguns and Sorcery
+      Puzzle Game/scene-standalonewindows64-world scene.vrcw
+    crc: 830981330
+    totalSize: 111038200
+    totalTimeTicks: 625952106
+    totalErrors: 1
+    totalWarnings: 1
+    buildType: 2
+    buildResult: 2
+  m_Files:
+  - path: D:/files/unity files/Shotguns-and-Sorcery-Magic-Puzzle-Game/Temp/unitystream.unity3d/BuildPlayer-world
+      scene
+    role: Scene
+    id: 0
+    totalSize: 1119740
+  - path: D:/files/unity files/Shotguns-and-Sorcery-Magic-Puzzle-Game/Temp/unitystream.unity3d/BuildPlayer-world
+      scene.sharedAssets
+    role: SharedAssets
+    id: 1
+    totalSize: 340715040
+  - path: D:/files/unity files/Shotguns-and-Sorcery-Magic-Puzzle-Game/Temp/unitystream.unity3d/BuildPlayer-world
+      scene.resource
+    role: StreamingResourceFile
+    id: 2
+    totalSize: 9368384
+  - path: D:/files/unity files/Shotguns-and-Sorcery-Magic-Puzzle-Game/Temp/unitystream.unity3d
+    role: AssetBundle
+    id: 3
+    totalSize: 111038200
+  m_BuildSteps:
+  - stepName: Build Asset Bundles
+    durationTicks: 625952106
+    depth: 0
+    messages: []
+  - stepName: Calculate asset bundles to be built
+    durationTicks: 243184
+    depth: 1
+    messages: []
+  - stepName: Prebuild Cleanup and Recompile
+    durationTicks: 34428935
+    depth: 1
+    messages: []
+  - stepName: Compile scripts
+    durationTicks: 33940473
+    depth: 2
+    messages: []
+  - stepName: Generate and validate platform script types
+    durationTicks: 402757
+    depth: 2
+    messages: []
+  - stepName: Build Scene AssetBundle(s)
+    durationTicks: 555354268
+    depth: 1
+    messages: []
+  - stepName: 'Build bundle: scene-standalonewindows64-world scene.vrcw'
+    durationTicks: 553139533
+    depth: 2
+    messages:
+    - type: 0
+      content: Building AssetBundles was canceled.
+  - stepName: Verify Build setup
+    durationTicks: 497175
+    depth: 3
+    messages: []
+  - stepName: Prepare assets for target platform
+    durationTicks: 1447257
+    depth: 3
+    messages: []
+  - stepName: Prepare splash screen
+    durationTicks: 102618
+    depth: 3
+    messages:
+    - type: 3
+      content: Including Unity Splash Screen logo because 'Show Unity Logo' is enabled.
+  - stepName: Building scenes
+    durationTicks: 25831527
+    depth: 3
+    messages: []
+  - stepName: Building scene Assets/Scenes/world scene.unity
+    durationTicks: 25831352
+    depth: 4
+    messages:
+    - type: 3
+      content: Computed code signatures for 49 scripts of type SerializedUdonProgramAsset
+        in 3ms
+    - type: 2
+      content: Script attached to 'Logic Manager' in scene 'Assets/Scenes/world scene.unity'
+        is missing or no valid script is attached.
+  - stepName: Writing asset files
+    durationTicks: 59716031
+    depth: 3
+    messages: []
+  - stepName: Packaging assets - archive:/BuildPlayer-world scene/BuildPlayer-world
+      scene.sharedAssets
+    durationTicks: 59655220
+    depth: 4
+    messages: []
+  - stepName: Creating compressed player package
+    durationTicks: 460390603
+    depth: 3
+    messages: []
+  - stepName: Postprocess built player
+    durationTicks: 48907
+    depth: 3
+    messages: []
+  m_Appendices:
+  - {fileID: -3124837450247082540}
+  - {fileID: -3267318009545251879}
+  - {fileID: 8649674504346336968}
+  - {fileID: -4838596755037814557}
+  - {fileID: -4592053208943180437}
+  - {fileID: -6267129990787437780}
+--- !u!1126 &8649674504346336968
+PackedAssets:
+  m_ShortPath: BuildPlayer-world scene.resource
+  m_Overhead: 0
+  m_Contents:
+  - fileID: 0
+    classID: 83
+    packedSize: 4288
+    offset: 0
+    sourceAssetGUID: 0ef463d3c59e8a449821c0a591cc651c
+    buildTimeAssetPath: Assets/Sound Effects/whoosh-blow-flutter-shortwav-14678.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 105024
+    offset: 0
+    sourceAssetGUID: 2ae9fd00133dd5940b867497c892a81c
+    buildTimeAssetPath: Assets/Sound Effects/magic circle sfx.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 38048
+    offset: 0
+    sourceAssetGUID: 3e57d7da8f0d64549a905e45eea646b9
+    buildTimeAssetPath: Assets/Sound Effects/horrific-zombie-growl-107090.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 9027776
+    offset: 0
+    sourceAssetGUID: 4e837579d90ff204ca23c43a29917fed
+    buildTimeAssetPath: Assets/melancholic music for reading and writing crime.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 30368
+    offset: 0
+    sourceAssetGUID: 76ae2a230ecddf646b402c547fb526a0
+    buildTimeAssetPath: Assets/Sound Effects/hq-explosion-6288.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 10944
+    offset: 0
+    sourceAssetGUID: 90f2b6fa2b90b7b419eefd2da7849e7b
+    buildTimeAssetPath: Assets/Sound Effects/item slot sparkle.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 4000
+    offset: 0
+    sourceAssetGUID: a2f662c2e95d51644a4c8216a8264e0f
+    buildTimeAssetPath: Assets/Sound Effects/butterfly sparkle.mp3
+  - fileID: 0
+    classID: 83
+    packedSize: 147936
+    offset: 0
+    sourceAssetGUID: c1e01163f49cd384aaae5376bb09b60f
+    buildTimeAssetPath: Assets/Sound Effects/zombie-sound-357975.mp3
